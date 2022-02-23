@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+              function gradaa() {
+            var celcius = Number(document.getElementById("grad").value); 
+            var llogaritja =celcius * 9 / 5 + 32 ;
+            document.getElementById("pergjigja").innerHTML = llogaritja
+            if (llogaritja >100){
+                alert("ssaa")
+
+            }
+            else if (llogaritja ){
+
+            }
+
+            
+    
+        }
+
+        </script>
+            <form>
+
+                <input type="number" placeholder="grad " id="grad">
+
+                <button type="button" onclick="gradaa()">submit</button>
+            </form>
+            <p id="pergjigja"></p>
+    </body>
+</html>

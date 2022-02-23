@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <style>
+        .bmicss {
+   
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            border: solid;
+            border-radius: 10px;
+            color: red;
+        }
+    </style>
+
+    <script>
+
+        function bmi() {
+            var gjatesia = Number(document.getElementById("gjatesia").value);
+            var pesha = Number(document.getElementById("pesha").value);
+            var bmi = pesha / (gjatesia * gjatesia);
+            document.getElementById("mes").innerHTML = bmi
+            if (bmi <= 18.5) {
+                alert("nen peshe")
+            }
+            else if (bmi >= 18.5 && bmi <= 25) {
+                alert("normale" + bmi)
+            }
+            else if (bmi > 25 && bmi <= 30) {
+                alert("mbi peshe" + bmi)
+            }
+            else {
+                alert("je shum mbi peshe" + bmi)
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="bmicss">
+        <form>
+
+            <input type="number" placeholder="gjatesia" id="gjatesia">
+            <input type="number" placeholder="pesha" id="pesha">
+            <button type="button" onclick="bmi()">submit</button>
+        </form>
+        <p id="mes">fdfd</p>
+    </div>
+
+</body>
+
+</html>

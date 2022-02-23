@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<style>
+    .css {
+        
+        display: flex;
+        color: rgb(208, 62, 62);
+        font-size: large;border: solid black;border-radius: 4px;
+        width: 202px;
+        float: right;
+       
+
+
+        
+    }
+    .css:hover{
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="css">
+        <div id="data"></div>
+        <div id="dita"></div>
+        <div id="muaji"></div>
+    </div>
+
+    <script>
+
+        var data = new Date();
+        // document.getElementById("data").innerHTML=(data.getMonth()+1)+"/"+(data.getDate())+"/"+(data.getFullYear());
+        var dita = data.getDay();
+        var vlera;
+        switch (dita) {
+            case 0:
+                vlera = "e diele";
+                break;
+            case 1:
+                vlera = "E Hene";
+                break;
+
+            case 2:
+                vlera = "E Marte";
+                break;
+
+            case 3:
+                vlera = "E Merkure";
+                break;
+
+            case 4:
+                vlera = "E Enjte";
+                break;
+
+            case 5:
+                vlera = "E Premte";
+                break;
+
+            default:
+                vlera = "E Shtune"
+        }
+        //    document.getElementById("dita").innerHTML=vlera; 
+        var muaji = data.getMonth();
+        var vleramuaji;
+        switch (muaji) {
+            case 0:
+                vleramuaji = "janar";
+
+                break;
+
+            case 1:
+                vleramuaji = "shkurt";
+
+                break;
+
+            case 2:
+                vleramuaji = "mars";
+
+                break;
+
+            case 3:
+                vleramuaji = "prill";
+
+                break;
+
+            case 4:
+                vleramuaji = "maj";
+
+                break;
+
+            case 5:
+                vleramuaji = "qershor";
+
+                break;
+
+            case 6:
+                vleramuaji = "korrik";
+
+                break;
+
+            case 7:
+                vleramuaji = "gusht";
+
+                break;
+
+            case 8:
+                vleramuaji = "shtator";
+
+                break;
+
+            case 9:
+                vleramuaji = "tetor";
+
+                break;
+
+            case 10:
+                vleramuaji = "nentor";
+
+                break;
+
+
+            default:
+                vleramuaji = "dhjetor"
+                break;
+        }
+        // document.getElementById("muaji").innerHTML=vleramuaji;
+        document.getElementById("data").innerHTML = vleramuaji + "/" + (data.getDate()) + "/" + (data.getFullYear()) + "/ " + vlera;
+    </script>
+</body>
+
+</html>

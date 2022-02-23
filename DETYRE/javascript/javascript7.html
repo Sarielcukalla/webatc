@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <p id="data" style="text-align: center;"> </p>
+
+  <fieldset>
+    <legend style="text-align: center;">TE DHENAT PERSONALE</legend>
+    <table border="5">
+      <tr style="font-size: 25px;">
+        <th>emri</th>
+        <th>mbiemri</th>
+        <th>mosha</th>
+        <th>statusi</th>
+      </tr>
+
+      <tr>
+        <td id="1"></td>
+        <td id="2"></td>
+        <td id="3"></td>
+        <td id="4"></td>
+      </tr>
+
+      <tr>
+        <td id="5"></td>
+        <td id="6"></td>
+        <td id="7"></td>
+        <td id="8"></td>
+      </tr>
+
+
+      <tr>
+        <td id="9"></td>
+        <td id="10"></td>
+        <td id="11"></td>
+        <td id="12"></td>
+      </tr>
+      <tr>
+        <td id="13"></td>
+        <td id="14"></td>
+        <td id="15"></td>
+        <td id="16"></td>
+      </tr>
+      <tr>
+        <td id="17"></td>
+        <td id="18"></td>
+        <td id="19"></td>
+        <td id="20"></td>
+      </tr>
+
+      <tr>
+        <td id="21"></td>
+        <td id="22"></td>
+        <td id="23"></td>
+        <td id="24"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="color: red;"> <strong>% e moshes dhe e statusit</strong> </td>
+
+        <td id="m"></td>
+        <td id="s"></td>
+
+      </tr>
+
+
+  </fieldset>
+  <script>
+    var ob = [
+      {
+        em: "ismail",
+        mb: "qemali",
+        mo: 18,
+        st: "beqar",
+
+      },
+      {
+        em: "marjo",
+        mb: "hena",
+        mo: 28,
+        st: "i martuar",
+
+      },
+      {
+        em: "donald",
+        mb: "meta",
+        mo: 23,
+        st: "i martuar",
+
+      },
+
+      {
+        em: "sali",
+        mb: "berisha",
+        mo: 35,
+        st: "i martuar",
+
+      },
+      {
+        em: "egi",
+        mb: "mato",
+        mo: 30,
+        st: "beqare",
+
+      },
+      {
+        em: "ani",
+        mb: "mato",
+        mo: 25,
+        st: "i martuar",
+
+      },
+    ]
+
+
+
+    {
+      document.getElementById("1").innerHTML = ob[0].em;
+      document.getElementById("2").innerHTML = ob[0].mb;
+      document.getElementById("3").innerHTML = ob[0].mo;
+      document.getElementById("4").innerHTML = ob[0].st;
+
+
+      document.getElementById("5").innerHTML = ob[1].em;
+      document.getElementById("6").innerHTML = ob[1].mb;
+      document.getElementById("7").innerHTML = ob[1].mo;
+      document.getElementById("8").innerHTML = ob[1].st;
+
+      document.getElementById("9").innerHTML = ob[2].em;
+      document.getElementById("10").innerHTML = ob[2].mb;
+      document.getElementById("11").innerHTML = ob[2].mo;
+      document.getElementById("12").innerHTML = ob[2].st;
+
+      document.getElementById("13").innerHTML = ob[3].em;
+      document.getElementById("14").innerHTML = ob[3].mb;
+      document.getElementById("15").innerHTML = ob[3].mo;
+      document.getElementById("16").innerHTML = ob[3].st;
+
+      document.getElementById("17").innerHTML = ob[4].em;
+      document.getElementById("18").innerHTML = ob[4].mb;
+      document.getElementById("19").innerHTML = ob[4].mo;
+      document.getElementById("20").innerHTML = ob[4].st;
+
+      document.getElementById("21").innerHTML = ob[5].em;
+      document.getElementById("22").innerHTML = ob[5].mb;
+      document.getElementById("23").innerHTML = ob[5].mo;
+      document.getElementById("24").innerHTML = ob[5].st;
+    }
+
+
+  </script>
+  <script>
+    var shuma = 0;
+    var count = 0;
+    var countBeqar = 0;
+    for (let i = 0; i < ob.length; i++) {
+      shuma += Number(ob[i].mo);
+
+      // alert(shuma)
+      if (ob[i].st == "i martuar") {
+        count++;
+      }
+      else if (ob[i].st == "beqar/e") {
+        countBeqar++;
+      }
+    }
+    document.getElementById("s").innerHTML = "Te martuar: " + (parseInt(count / ob.length * 100)) + "Beqar: " + (100 - Number(parseInt(count / ob.length * 100)));
+
+
+
+    document.getElementById("m").innerHTML = shuma / ob.length
+
+
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>

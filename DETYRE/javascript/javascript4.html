@@ -1,0 +1,65 @@
+<<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <table border="1">
+            <tr>
+                <th>
+                    Emer
+                </th>
+                <th>
+                    Mbiemer
+                </th>
+                <th>
+                    Mosha
+                </th>
+            </tr>
+            <tr>
+                <td id="Emer"> </td>
+                <td id="Mbiemer"></td>
+                <td id="Mosha"></td>
+            </tr>
+
+        </table>
+        <script>
+            var vektor = ["Sako", "Xhivini", "23"];
+            var objekt = [{
+                Emer: "sariel",
+                Mbiemer: "Cukalla",
+                Mosha: 20
+            }, {
+                Emer: "Sako",
+                Mbiemer: "Xhivin",
+                Mosha: 23
+            }, {
+                Emer: "Sako",
+                Mbiemer: "Xhivin",
+                Mosha: 23
+            }, {
+                Emer: "Sako",
+                Mbiemer: "Xhivin  i parafundit ",
+                Mosha: 23
+            }, {
+                Emer: "Sako I fundit ",
+                Mbiemer: "Xhivin",
+                Mosha: 23
+            }]
+            // // var nr = 3;
+            // // if (nr % 2 == 0) {
+            // //     alert("nr eshte cift");
+
+            // // }
+            // // else {
+            // //     alert("nr eshte tek");
+            // }
+            document.getElementById("Emer").innerHTML = objekt[0].Emer;
+            document.getElementById("Mbiemer").innerHTML = objekt[objekt.length - 2].Mbiemer;
+            document.getElementById("Mosha").innerHTML = objekt[0].Mosha;
+        </script>
+    </body>
+
+
+    </html>
