@@ -1,0 +1,37 @@
+<html>
+
+<head></head>
+
+<body>
+    <p id="afisho"></p>
+    <p id="afisho1"></p>
+    <p id="tempF"></p>
+
+
+    <script>
+
+
+        var objekt = [
+            { mosha: 20 },
+            { mosha: 27 },
+            { mosha: 17 },
+            { mosha: 16 },
+            { mosha: 44 },
+            { mosha: 21 }
+        ];
+        var shuma = 0
+        var count=0
+
+        for (var k = 0; k < objekt.length; k++) {
+            // shuma += objekt[k].mosha;
+            if(objekt[k].mosha<20){
+                shuma += objekt[k].mosha;
+                count++
+            }
+        }0
+        window.confirm(shuma / objekt.length);
+        window.confirm(shuma /count);
+    </script>
+</body>
+
+</html>

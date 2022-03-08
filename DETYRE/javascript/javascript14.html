@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="bg-dark" onload="klasa.funcWhile()">
+    <!-- <input type="text" id="pal">
+    <button type="button" onclick="klasa.palindrome()">Search</button>
+    <p id="pergjigja"></p> -->
+
+    <!-- <p id="pergjigjaWhile"></p> -->
+
+<table class="table table-primary w-50" border="1" >
+    <tr>
+        <th>Popullsia</th>
+        <th>nr,faamiljeve</th>
+        <th>ant.,familjes</th>
+ 
+    </tr>
+    <tr >
+        <td id="popullsia"></td>
+        <td id="nr.fam"></td>
+        <td id="ant.fam"></td>
+    </tr>
+  
+</table>
+    </form>
+
+    <script>
+
+
+        class Pal {
+            constructor() {
+            }
+            palindrome() {
+                var text = String(document.getElementById("pal").value);
+                var texti;
+                for (let i = 0; i < text.length / 2; i--) {
+                    if (text[i] !== text[text.length - 1 - i]) {
+
+                        texti = "fjala NUK eshte palindrome"
+                        return texti;
+                    }
+                    else {
+                        texti = "fjala eshte palindrome"
+
+                        return texti;
+                    }
+                }
+            }
+            funcWhile() {
+                var shuma = 0;
+                var variable = [{
+                    familja: {
+                        nrPjestarve: 10,
+                        mbiemri: "XYZ"
+                    }
+                }, {
+                    familja: {
+                        nrPjestarve: 3,
+                        mbiemri: "ZZZ"
+                    }
+
+
+                }, {
+                    familja: {
+                        nrPjestarve: 7,
+                        mbiemri: "YYY"
+                    }
+                }
+                ]
+                var i = 0
+                while (i < variable.length) {
+                    shuma += variable[i].familja.nrPjestarve;
+                    i++;
+                }
+                document.getElementById("popullsia").innerHTML = shuma ;
+                document.getElementById("ant.fam").innerHTML = shuma/ variable.length ;
+                document.getElementById("nr.fam").innerHTML =variable.length ;
+            }
+        }
+        let klasa = new Pal();
+        alert(klasa.palindrome());
+
+
+
+
+
+    </script>
+</body>
+
+</html>

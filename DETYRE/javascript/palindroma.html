@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="pergjigja"></p>
+    </div>
+    </form>
+
+    <script>
+
+
+        class palindroma {
+            constructor(pal) {
+                this.pal = pal;
+            }
+            palindrome(val) {
+                var text = val;
+                for (let i = 0; i < text.length / 2; i++) {
+                    if (text[i] !== text[text.length - 1 - i]) {
+                        return "fjala NUK eshte palindrome";
+                    }
+                }
+                alert("fjala eshte palindrome")
+            }
+
+        }
+        let klasa = new palindroma("Anna");
+        const string = prompt('Enter a string or number: ');
+
+        const value = klasa.palindrome(string);  
+    </script>
+</body>
+
+</html>

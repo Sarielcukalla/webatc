@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <p id="ff"></p>
+    <div id="emer"></div>
+    <script>
+        class WebDesign {
+            constructor(age, klasa) {
+                this.age = age;
+                this.klasa = klasa;
+            };
+            // // bmi(pesha, gjatesia) {
+            //     var llogaritja = pesha/(gjatesia * gjatesia);
+            //     if (llogaritja < 18.5) {
+            //         alert("Je nenePeshe")
+
+            //     }
+            //     else if (llogaritja >= 18.5 && llogaritja < 25) {
+            //         alert("Je Normal")
+
+            //     }
+            //     else if (llogaritja >= 25 && llogaritja < 30) {
+            //         alert("Je pak MbiPeshe")
+
+            //     }
+            //     else {
+            //         alert("Je Shume Mbi Peshe")
+
+            //     }
+            //     return this.klasa;
+            // }
+            F(celcius) {
+                var llogaritja=celcius *9 / 5 + 32;
+                return celcius ;
+            }
+
+        }
+        let klasat = new WebDesign(15, "WebDesign");
+        document.getElementById("emer").innerHTML = klasat.bmi(80, 1.8) + klasat.kejdi("Kejdi", "Gjermeni");
+document.getElementById("ff").innerHTML=klasat.F(100)
+    </script>
+
+    <body>
+
+</html>

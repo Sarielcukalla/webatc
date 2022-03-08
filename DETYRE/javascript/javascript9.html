@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <p id="lcs"></p>
+    <script>
+        //         var vek=["aaa",1,2,3,4,"bbb"];
+        //         // vek.push("4");
+
+
+
+        // // for(let i=0;i<vek.length; i++ ){
+        // // if (vek[i]%2==0){
+        // //       vek.push("33")
+
+        // //       }
+        // document.getElementById("vektori").innerHTML=vek.sort();
+        // // }
+        var obj = [{
+            emer: "e",
+            gjinia: "m",
+        }, {
+            emer: "fdfds",
+            gjinia: "f",
+        }]
+        localStorage.setItem("emer",JSON.stringify(obj))
+        localStorage.setItem("emer",obj[1].emer)
+        document.getElementById("lcs").innerHTML=emer
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Emri</th>
+            <th>Mbiemeri</th>
+            <th>rroga</th>
+            <th>Profeisoni</th>
+        </tr>
+        <tr>
+            <td id="shuma1"></td>
+            <td id="mes.rrog"></td>
+            <td id="rrogat1"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+        var shuma = 0
+        var rrogat = [{
+            Emri: "Sariel", Mbiemeri: "Cukalla", rroga: 30000, Profesioni: "Doktor"
+
+        },
+        {
+            Emri: "Kejdi", Mbiemeri: "Gjermeni", rroga: shuma100000, Profesioni: "Avokat"
+
+        },
+        { Emri: "Alsid", Mbiemeri: "Kalemi", rroga: 50000, Profeisoni: "Web designer" }]
+        for (let i = 0; i < rrogat.length; i++) {
+            shuma = rrogat[i].rroga
+
+        }
+        document.getElementById("shuma1").innerHTML = shuma;
+        document.getElementById("mes.rrog").innerHTML = shuma / rrogat.length;
+        document.getElementById("rrogat1").innerHTML = rrogat.length;
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="faktoriali">
+    <button type="button" onclick="klasa.faktorial()">Llogarit</button>
+    <p id="vlera"></p>
+
+    </div>
+    <script>
+        class Fakt {
+            constructor() {
+
+            }
+
+            faktorial() {
+                var faktorial = 1;
+                var nr = document.getElementById("faktoriali").value;
+                for (let i = Number(nr) + 1; i > 1; i--) {
+                    faktorial = faktorial * (i - 1);
+                }
+
+                document.getElementById("vlera").innerHTML = faktorial;
+            }
+        }
+        let klasa = new Fakt();
+
+
+    </script>
+
+</body>
+
+</html>
