@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <p id="afishim"></p>
+    <script>
+        var data = new Date();
+        var dita = data.getDay()
+        var vlera;
+        var hour=data.getHours()
+        switch (dita) {
+            case 0:
+                vlera = "e diele";
+                break;
+            case 1:
+                vlera = "E Hene";
+                break;
+
+            case 2:
+                vlera = "E Marte";
+                break;
+
+            case 3:
+                vlera = "E Merkure";
+                break;
+
+            case 4:
+                vlera = "E Enjte";
+                break;
+
+            case 5:
+                vlera = "E Premte";
+                break;
+
+            default:
+                vlera = "E Shtune"
+        }
+      if ((dita==0 || dita==6 ) && ora<=9) {
+          alert("kafja falas")
+          
+      }
+document.getElementById("afishim").innerHTML=vlera
+ 
+ var bar=[{
+    
+    
+ }]
+    </script>
+</body>
+
+</html>

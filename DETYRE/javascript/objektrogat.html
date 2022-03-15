@@ -11,21 +11,9 @@
 </head>
 
 <body>
-    <table>
-        <tr>
-            <th>Emri</th>
-            <th>Mbiemeri</th>
-            <th>rroga</th>
-            <th>Profeisoni</th>
-        </tr>
-        <tr>
-            <td id="shuma1"></td>
-            <td id="mes.rrog"></td>
-            <td id="rrogat1"></td>
-            <td></td>
-        </tr>
-    </table>
-
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
     <script>
         var shuma = 0
         var rrogat = [{
@@ -33,17 +21,18 @@
 
         },
         {
-            Emri: "Kejdi", Mbiemeri: "Gjermeni", rroga: shuma100000, Profesioni: "Avokat"
+            Emri: "Kejdi", Mbiemeri: "Gjermeni", rroga: 100000, Profesioni: "Avokat"
 
         },
         { Emri: "Alsid", Mbiemeri: "Kalemi", rroga: 50000, Profeisoni: "Web designer" }]
         for (let i = 0; i < rrogat.length; i++) {
-            shuma = rrogat[i].rroga
+            shuma += rrogat[i].rroga
+            
 
         }
-        document.getElementById("shuma1").innerHTML = shuma;
-        document.getElementById("mes.rrog").innerHTML = shuma / rrogat.length;
-        document.getElementById("rrogat1").innerHTML = rrogat.length;
+        document.getElementById("1").innerHTML = shuma;
+        document.getElementById("2").innerHTML = shuma / rrogat.length;
+        document.getElementById("3").innerHTML = rrogat.length;
 
     </script>
 </body>
