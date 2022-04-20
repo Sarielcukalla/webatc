@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+.topnav {
+    background-color:white;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+   
+  }
+  
+  
+  .topnav a {
+      left: 650px;
+      position: relative;
+      top: 10px;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  .input{
+      position: absolute;
+      display: flex;
+     right: 80px;
+      margin-top: -55px;
+      margin-left: -20px;
+      
+  }
+  
+   
+ 
+ 
+  
