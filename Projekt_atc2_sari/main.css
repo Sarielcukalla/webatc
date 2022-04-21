@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    
 }
 .topnav {
     background-color:white;
@@ -14,7 +15,7 @@ body{
   .topnav a {
       left: 650px;
       position: relative;
-      top: 10px;
+      top: 15px;
     float: left;
     color: black;
     text-align: center;
@@ -23,7 +24,7 @@ body{
     font-size: 17px;
     
   }
-  .input{
+  .form{
       position: absolute;
       display: flex;
      right: 80px;
@@ -31,6 +32,20 @@ body{
       margin-left: -20px;
       
   }
+  form{
+    display: flex;
+  }
+  .text{
+    top: -10px;
+    font-size: 60px;
+    position: absolute;
+    left: 30px;
+    
+    background: -webkit-linear-gradient(rgb(38, 160, 44), rgba(124, 243, 229, 0.665));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
   
    
  
