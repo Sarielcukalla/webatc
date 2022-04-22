@@ -1,66 +1,47 @@
 body{
-    margin: 0;
-    
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient( to right ,#80df66, #aff8f5);
   
-    
 }
-.topnav {
-    background-color:white;
- 
-    width: 100%;
-    height: 80px;
+
+    #Logo{
+      
+      width: 120px;
+      height: 120px;
+    }
+    h1{
+  cursor: pointer;
+      font-size: 40px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background: -webkit-linear-gradient(rgb(38, 160, 44), rgba(124, 243, 229, 0.665));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+nav { 
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
    
-  }
-  
-  
-  .topnav a {   
+  } 
+
+  #menu  a{
+padding: 50px;
     color: black;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
-    font-size: 17px;
-    
   }
-  .topnav a:hover{
-     
+  #menu a:hover{
     background: -webkit-linear-gradient(rgb(38, 160, 44), rgba(124, 243, 229, 0.665));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 1s;
-}
-  
-  .form{
-      float: right ;
-      display: flex;
-     right: 80px;
-      margin-top: -55px;
-      margin-left: -20px;
-      
   }
-  form{
-    display: flex;
+  .overlay{
+    left: -340px;
+    top: 115px;
+  position: absolute;
+    background-color:rgb(255, 255, 255);
+    border-radius: 500px;
+    width: 1000px;
+    height: 1000px;
+
   }
-  .text{
-    top: -10px;
-    font-size: 60px;
-    position: absolute;
-    left: 30px;
-    
-    background: -webkit-linear-gradient(rgb(38, 160, 44), rgba(124, 243, 229, 0.665));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.link{position: relative;
-  width: 100px;
-  top: 59px;
-  display: flex;
-  flex-direction: column;
-  }  
-  .nav-container{
-   display: flex;
-   
-  }   
- 
- 
   
