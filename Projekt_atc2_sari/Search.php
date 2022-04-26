@@ -77,32 +77,57 @@
             </div>
         </div>
     </nav>
-    <div class="home-container">
-    
-        <div class="doctor">
-            <img src="./image/pharmacy.png">
-        </div>
-        <div class="circle"></div>
-        <!-- <div class="text">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
-              </svg>
-
-            <p>The pharmacy  that cares for</p><br>
-            <p>the wellbeing of you and your family.</p> 
-            <div class="box-text"></div>
-        </div>
-        -->
-
-
-
-    </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+
+
+<?php
+
+
+if (isset($_GET['btn'])) {
+    include "Ldb.php";  
+    $data =array();
+    
+    $kerko = $_GET['Search'];
+    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Medical Like  '%$kerko%'"); 
+        while ($row=mysqli_fetch_object($te_dhenat)){
+            $data[]=$row; 
+    
+           
+    }
+    
+    $arr = json_decode(json_encode($data), TRUE);
+}
+    ?>
+
+<?php
+    foreach($arr as $key => $value): ?>
+ <div class="product-card" style="display:inline-flex;">
+		<div class="badge">Hot</div>
+		<div class="product-tumb">
+			<img src="https://i.imgur.com/xdbHo4E.png" alt="">
+		</div>
+		<div class="product-details">
+			<span class="product-catagory"><?php echo $value['product'] ?></span>
+			<h4><a href="">Women leather bag</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+			<div class="product-bottom-details">
+				<div class="product-price"><small>$96.00</small>$230.99</div>
+				<div class="product-links">
+					<a href=""><i class="fa fa-heart"></i></a>
+					<a href=""><i class="fa fa-shopping-cart"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<?php endforeach;?>
 
 </body>
 
