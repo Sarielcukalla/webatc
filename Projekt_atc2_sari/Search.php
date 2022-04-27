@@ -10,13 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
-            <a href="#"><img id="Logo" src="./image/LOGO3.png"></a>
+            <a href="index.php"><img id="Logo" src="./image/LOGO3.png"></a>
             <h1>Pharmacy</h1>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item" data-bs-target=".show" aria-expanded="false">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="index.php">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-house"></i>&nbsp;Home
                         </a>
                     </li>
@@ -93,7 +93,7 @@ if (isset($_GET['btn'])) {
     $data =array();
     
     $kerko = $_GET['Search'];
-    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Medical Like  '%$kerko%'"); 
+    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Product Like  '%$kerko%'"); 
         while ($row=mysqli_fetch_object($te_dhenat)){
             $data[]=$row; 
     
@@ -109,17 +109,17 @@ if (isset($_GET['btn'])) {
  <div class="product-card" style="display:inline-flex;">
 		<div class="badge">Hot</div>
 		<div class="product-tumb">
-			<img src="https://i.imgur.com/xdbHo4E.png" alt="">
+			<img src="./image/<?php echo $value['image'] ?>" alt="">
 		</div>
 		<div class="product-details">
-			<span class="product-catagory"><?php echo $value['product'] ?></span>
+			<span class="product-catagory"><?php echo $value['Product'] ?></span>
 			<h4><a href="">Women leather bag</a></h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
 			<div class="product-bottom-details">
 				<div class="product-price"><small>$96.00</small>$230.99</div>
 				<div class="product-links">
-					<a href=""><i class="fa fa-heart"></i></a>
-					<a href=""><i class="fa fa-shopping-cart"></i></a>
+					<a href=""><i class="bi bi-heart"></i></a>
+					<a href=""><i class="bi bi-shopping-cart"></i></a>
 				</div>
 			</div>
 		</div>

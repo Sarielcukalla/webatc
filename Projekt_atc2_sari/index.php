@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
-            <a href="#"><img id="Logo" src="./image/LOGO3.png"></a>
+            <a href="index.php"><img id="Logo" src="./image/LOGO3.png"></a>
             <h1>Pharmacy</h1>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item" data-bs-target=".show" aria-expanded="false">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="index.php">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-house"></i>&nbsp;Home
                         </a>
                     </li>
