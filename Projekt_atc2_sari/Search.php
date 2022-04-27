@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
-            <a href="#"><img id="Logo" src="./image/LOGO3.png"></a>
+            <a href=""><img id="Logo" src="./image/LOGO3.png"></a>
             <h1>Pharmacy</h1>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -109,7 +109,7 @@ if (isset($_GET['btn'])) {
  <div class="product-card" style="display:inline-flex;">
 		<div class="badge">Hot</div>
 		<div class="product-tumb">
-			<img src="https://i.imgur.com/xdbHo4E.png" alt="">
+			<img src="https://i.imgur.com/xdbHo4E.png" alt="" >
 		</div>
 		<div class="product-details">
 			<span class="product-catagory"><?php echo $value['product'] ?></span>
@@ -118,8 +118,8 @@ if (isset($_GET['btn'])) {
 			<div class="product-bottom-details">
 				<div class="product-price"><small>$96.00</small>$230.99</div>
 				<div class="product-links">
-					<a href=""><i class="fa fa-heart"></i></a>
-					<a href=""><i class="fa fa-shopping-cart"></i></a>
+					<a href=""><i class="bi bi-heart"></i></a>
+					<a href=""><i class="bi bi-shopping-cart"></i></a>
 				</div>
 			</div>
 		</div>
