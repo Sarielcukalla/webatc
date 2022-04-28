@@ -16,11 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
-<<<<<<< HEAD
             <a href="index.php"><img id="Logo" src="./image/LOGO3.png"></a>
-=======
-            <a href=""><img id="Logo" src="./image/LOGO3.png"></a>
->>>>>>> c7e002c8e2597eef6cda1ef633065826235e9fac
             <h1>Pharmacy</h1>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -90,8 +86,6 @@
 
 
 <?php
-
-
 if (isset($_GET['btn'])) {
     include "Ldb.php";  
     $data =array();
@@ -105,19 +99,11 @@ if (isset($_GET['btn'])) {
     }
     
     $arr = json_decode(json_encode($data), TRUE);
-}
-    ?>
-
-<?php
-    foreach($arr as $key => $value): ?>
- <div class="product-card" style="display:inline-flex;">
-		<div class="badge">Hot</div>
+} ?> 
+<?php foreach($arr as $key => $value): ?>
+ <div class="product-card">
 		<div class="product-tumb">
-<<<<<<< HEAD
-			<img src="./image/<?php echo $value['image'] ?>" alt="">
-=======
-			<img src="https://i.imgur.com/xdbHo4E.png" alt="" >
->>>>>>> c7e002c8e2597eef6cda1ef633065826235e9fac
+			<img src="./image/<?php echo $value['image'] ?>">
 		</div>
 		<div class="product-details">
 			<span class="product-catagory"><?php echo $value['Product'] ?></span>
