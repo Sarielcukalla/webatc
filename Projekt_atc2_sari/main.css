@@ -1,4 +1,4 @@
-/* 
+
 body{
  background-image:linear-gradient(to left,rgba(255, 255, 255, 0.665), rgb(93, 187, 167));
  width: 100px;
@@ -63,12 +63,9 @@ padding: 50px;
   text-align: center;
  
   
-<<<<<<< HEAD
 }
 .product-tumb img{
   width:200px;
    height:200px;
+   
 }
-=======
-} */
->>>>>>> c7e002c8e2597eef6cda1ef633065826235e9fac
