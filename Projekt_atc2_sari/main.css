@@ -70,6 +70,4 @@ padding: 50px;
   border-radius: 50px;
 }
 
-* {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
+
