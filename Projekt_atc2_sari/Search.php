@@ -7,10 +7,9 @@
     <title></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
 </head>
 
 <body>
@@ -100,6 +99,7 @@ if (isset($_GET['btn'])) {
     
     $arr = json_decode(json_encode($data), TRUE);
 } ?> 
+<div class="cards-flex">
 <?php foreach($arr as $key => $value): ?>
  <div class="product-card">
 		<div class="product-tumb">
@@ -122,6 +122,7 @@ if (isset($_GET['btn'])) {
 
 
 <?php endforeach;?>
+</div>
 
 </body>
 
