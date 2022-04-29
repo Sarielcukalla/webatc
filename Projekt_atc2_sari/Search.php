@@ -86,8 +86,6 @@
 
 
 <?php
-
-
 if (isset($_GET['btn'])) {
     include "Ldb.php";  
     $data =array();
@@ -101,22 +99,18 @@ if (isset($_GET['btn'])) {
     }
     
     $arr = json_decode(json_encode($data), TRUE);
-}
-    ?>
-
-<?php
-    foreach($arr as $key => $value): ?>
- <div class="product-card" style="display:inline-flex;">
-		<div class="badge">Hot</div>
+} ?> 
+<?php foreach($arr as $key => $value): ?>
+ <div class="product-card">
 		<div class="product-tumb">
 			<img src="./image/<?php echo $value['image'] ?>" alt="">
 		</div>
 		<div class="product-details">
 			<span class="product-catagory"><?php echo $value['Product'] ?></span>
 			<h4><a href="">Women leather bag</a></h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+			<p><?php echo $value['Description'] ?></p>
 			<div class="product-bottom-details">
-				<div class="product-price"><small>$96.00</small>$230.99</div>
+				<div class="product-price"><small><?php echo $value['Price'] ?></small></div>
 				<div class="product-links">
 					<a href=""><i class="bi bi-heart"></i></a>
 					<a href=""><i class="bi bi-shopping-cart"></i></a>

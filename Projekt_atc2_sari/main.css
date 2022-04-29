@@ -1,6 +1,6 @@
 
 body{
- background-image:linear-gradient(to left,rgba(255, 255, 255, 0.665), rgb(93, 187, 167));
+ background-image:linear-gradient(to right,rgba(60, 141, 221, 0.985), rgb(85, 187, 165));
  width: 100px;
  height: 100vh;
 
@@ -56,16 +56,18 @@ padding: 50px;
     z-index: 1;
  
   }
-.text{
-  left:60px;
-  position: absolute;
-  top: 750px;
-  text-align: center;
- 
-  
+
+
+.product-card{
+  display:inline-flex;
 }
+
 .product-tumb img{
-  width:200px;
-   height:200px;
-   
+
+  position: relative;
+  top: 200px;
+  left: 40px;
+  border-radius: 50px;
 }
+
+
