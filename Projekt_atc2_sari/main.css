@@ -1,6 +1,6 @@
 
 body{
- background-image:linear-gradient(to left,rgba(255, 255, 255, 0.665), rgb(93, 187, 167));
+ background-image:linear-gradient(to right,rgba(60, 141, 221, 0.985), rgb(85, 187, 165));
  width: 100px;
  height: 100vh;
 
@@ -69,3 +69,7 @@ padding: 50px;
   left: 40px;
   border-radius: 50px;
 }
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
