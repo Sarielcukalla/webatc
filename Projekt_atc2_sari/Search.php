@@ -99,7 +99,7 @@ if (isset($_GET['btn'])) {
     
     $arr = json_decode(json_encode($data), TRUE);
 } ?> 
-<div class="cards-flex">
+<div class="container cards-flex">
 <?php foreach($arr as $key => $value): ?>
  <div class="product-card">
 		<div class="product-tumb">
@@ -107,7 +107,7 @@ if (isset($_GET['btn'])) {
 		</div>
 		<div class="product-details">
 			<span class="product-catagory"><?php echo $value['Product'] ?></span>
-			<h4><a href="">Women leather bag</a></h4>
+			<h4><a href="">Shop Now</a></h4>
 			<p><?php echo $value['Description'] ?></p>
 			<div class="product-bottom-details">
 				<div class="product-price"><small><?php echo $value['Price'] ?></small></div>
