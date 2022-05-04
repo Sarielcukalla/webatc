@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -81,16 +80,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
-
-
 <?php
-if (isset($_GET['btn'])) {
+if (isset($_GET['name'])) {
     include "Ldb.php";  
     $data =array();
     
-    $kerko = $_GET['Search'];
-    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Product Like  '%$kerko%'"); 
+    $kerko = $_GET['name'];
+    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Product =  '$kerko' Limit 1"); 
         while ($row=mysqli_fetch_object($te_dhenat)){
             $data[]=$row; 
     
@@ -98,19 +94,18 @@ if (isset($_GET['btn'])) {
     }
     
     $arr = json_decode(json_encode($data), TRUE);
+
 } ?> 
-<div class="container cards-flex">
-<?php foreach($arr as $key => $value): ?>
- <div class="product-card">
+<div class="product-card">
 		<div class="product-tumb">
-			<img src="./image/<?php echo $value['image'] ?>" alt="">
+			<img src="./image/<?php echo $arr[0]['image'] ?>" alt="">
 		</div>
 		<div class="product-details">
-			<span class="product-catagory"><?php echo $value['Category'] ?></span>
-			<h4><a href="./Detaje.php?name=<?php echo $value['Product'] ?>"><?php echo $value['Product'] ?></a></h4>
-			<p><?php echo $value['Description'] ?></p>
+			<span class="product-catagory"><?php echo $arr[0]['Category'] ?></span>
+			<h4><a href="./Detaje.php?name=<?php echo $arr[0]['Product'] ?>"><?php echo $arr[0]['Product'] ?></a></h4>
+			<p><?php echo $arr[0]['Description'] ?></p>
 			<div class="product-bottom-details">
-				<div class="product-price"><small><?php echo $value['Price'] ?></small></div>
+				<div class="product-price"><small><?php echo $arr[0]['Price'] ?></small></div>
 				<div class="product-links">
 					<a href=""><i class="bi bi-heart"></i></a>
 					<a href=""><i class="bi bi-shopping-cart"></i></a>
@@ -120,10 +115,4 @@ if (isset($_GET['btn'])) {
 	</div>
 
 
-
-<?php endforeach;?>
-</div>
-
-</body>
-
-</html>
+$arr[0]['Product']
