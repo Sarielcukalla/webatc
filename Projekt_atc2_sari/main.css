@@ -3,14 +3,14 @@ body {
     height: 100vh;
 }
 
-#Logo {
-    width: 120px;
-    height: 120px;
+h1 {
+    margin-left: 20px;
+    font-size: 3.25rem;
 }
 
-h1 {
+a.Logo {
+    text-decoration: none;
     cursor: pointer;
-    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: -webkit-linear-gradient(rgb(38, 160, 44), rgba(124, 243, 229, 0.665));
     -webkit-background-clip: text;
@@ -19,6 +19,7 @@ h1 {
 
 nav {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    font-variant: petite-caps;
 }
 
 #menu a {
@@ -163,4 +164,20 @@ nav {
 
 .product-links a:hover {
     color: #287710;
+}
+
+.form-control {
+    border-radius: 2.25rem;
+}
+
+.btn {
+    border-radius: 2.25rem;
+}
+
+.navbar-nav {
+    padding-left: 125px;
+}
+
+.dropdown-menu {
+    border-radius: 1.25rem;
 }

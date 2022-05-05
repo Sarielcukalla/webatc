@@ -15,8 +15,8 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
-            <a href="index.php"><img id="Logo" src="./image/LOGO3.png"></a>
-            <h1>Pharmacy</h1>
+            <a class="Logo" href="index.php"><h1>Pharmacy</h1></a>
+            
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <i class="bi bi-list"></i>
@@ -107,7 +107,7 @@ if (isset($_GET['btn'])) {
 		</div>
 		<div class="product-details">
 			<span class="product-catagory"><?php echo $value['Product'] ?></span>
-			<h4><a href="">Shop Now</a></h4>
+			<h4><a href="">Shop NOW</a></h4>
 			<p><?php echo $value['Description'] ?></p>
 			<div class="product-bottom-details">
 				<div class="product-price"><small><?php echo $value['Price'] ?></small></div>

@@ -16,9 +16,8 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
-            <a href="index.php"><img id="Logo" src="./image/LOGO3.png"></a>
-            <h1>Pharmacy</h1>
-
+            <a class="Logo" href="index.php"><h1><span>Phar</span>macy</h1></a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <i class="bi bi-list"></i>
             </button>
@@ -67,6 +66,7 @@
 
                     </li>
                 </ul>
+               
                 <form method="GET" action="./Search.php" class="d-flex">
                     <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
                     <button class="btn btn-outline-success" data-bs-target=".show" aria-expanded="false"
