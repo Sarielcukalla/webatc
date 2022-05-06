@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+
+        <?php
+$cookie_name = "emri";
+$cookie_value = "Paracetamol";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+?><!DOCTYPE html>
 <html>
 
 <head>
@@ -83,21 +88,50 @@
                         <h2>Log in</h2>
                         <div class="form-element">
                     <label for="email">Email</label>
-                    
+                    <input type="text" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-element">
+                            <label for="password">Password</label>
+                            <input type="password"id="password" placeholder="Enter password">
+                        </div>
+                        <div class="form-element">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <div class="form-element">
+                            <button>Sign in</button>
+                        </div>
+                        <div class="form-element">
+                          <a href="" id="Forgot password">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+
+
+
     <div class="home-container">
         <div class="doctor">
             <img src="./image/pharmacy.png">
         </div>
         <div class="circle"></div>
-    
      
 
+
+<?php
+if(!isset($_COOKIE[$cookie_name])) {
+  echo "Cookie named '" . $cookie_name . "' is not set!";
+} else {
+  
+  echo  $_COOKIE[$cookie_name];
+}
+?>
+<?php
+echo hash('sha512','kokaelavamanit1')
+
+?>
     </div>
 
 
