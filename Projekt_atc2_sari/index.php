@@ -16,14 +16,14 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
-            <a class="Logo" href="index.php"><h1><span>Phar</span>macy</h1></a>
+            <a class="Logo" href="index.php"><img src="./image/logo.png"></a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item" data-bs-target=".show" aria-expanded="false">
+                    <li id="Home" class="nav-item" data-bs-target=".show" aria-expanded="false">
                         <a class="nav-link" href="index.php">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-house"></i>&nbsp;Home
                         </a>
@@ -74,6 +74,19 @@
 
 
                 </form>
+                <div class="center">
+                    <button id="show-login">Login</button>
+                </div>
+                <div class="popup">
+                    <div class="close-btn">&times;</div>
+                    <div class="form">
+                        <h2>Log in</h2>
+                        <div class="form-element">
+                    <label for="email">Email</label>
+                    
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>

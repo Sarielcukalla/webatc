@@ -3,18 +3,9 @@ body {
     height: 100vh;
 }
 
-h1 {
-    margin-left: 20px;
-    font-size: 3.25rem;
-}
-
-a.Logo {
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: -webkit-linear-gradient(rgb(38, 160, 44), rgba(124, 243, 229, 0.665));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.Logo img {
+    height: auto;
+    width: 279px;
 }
 
 nav {
@@ -23,12 +14,12 @@ nav {
 }
 
 #menu a {
-    padding: 50px;
+    padding: 40px;
     color: black;
 }
 
 #menu a:hover {
-    background: -webkit-linear-gradient(rgb(38, 160, 44), rgba(124, 243, 229, 0.665));
+    background: -webkit-linear-gradient(rgba(60, 133, 210, 0.938), rgb(12, 152, 86));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -180,4 +171,10 @@ nav {
 
 .dropdown-menu {
     border-radius: 1.25rem;
+}
+
+#Home {
+    background: -webkit-linear-gradient(rgba(60, 133, 210, 0.938), rgb(12, 152, 86));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

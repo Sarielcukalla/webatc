@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
-            <a class="Logo" href="index.php"><h1>Pharmacy</h1></a>
+        <a class="Logo" href="index.php"><img src="./image/logo.png"></a>
             
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
