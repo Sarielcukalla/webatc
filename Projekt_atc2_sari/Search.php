@@ -103,7 +103,7 @@ if (isset($_GET['btn'])) {
 <?php foreach($arr as $key => $value): ?>
  <div class="product-card">
 		<div class="product-tumb">
-			<img src="./image/<?php echo $value['image'] ?>" alt="">
+			<img src="./image/<?php echo $value['image'] ?>" >
 		</div>
 		<div class="product-details">
 			<span class="product-catagory"><?php echo $value['Product'] ?></span>

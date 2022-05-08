@@ -102,7 +102,7 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
                             <button>Sign in</button>
                         </div>
                         <div class="form-element">
-                          <a href="" id="Forgot password">
+                          <a href="" id="Forgot password">forgot password</a>
                         </div>
                     </div>
                 </div>
