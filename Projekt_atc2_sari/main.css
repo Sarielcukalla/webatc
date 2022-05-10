@@ -1,7 +1,7 @@
-body {
+/* body {
     background-image: linear-gradient(to right, rgba(60, 141, 221, 0.985), rgb(85, 187, 165));
     height: 100vh;
-}
+} */
 
 .Logo img {
     height: auto;
@@ -159,6 +159,8 @@ nav {
 
 .form-control {
     border-radius: 2.25rem;
+    font-weight: 500;
+    
 }
 
 .btn {
@@ -183,6 +185,7 @@ nav {
     top: 60px;
     right: 240px;
     transform: translate(-50%,-50%);
+    z-index: 9999;
 }
 .center button{
     padding: 10px 20px;
@@ -218,6 +221,7 @@ nav {
     transition:top 0ms ease-in-out 0ms
     opacity 200ms ease-in-out 0ms,
    transform 20ms ease-in-out 0ms;
+   z-index: 9999;
 }
 .popup .close-btn{
     position: absolute;
@@ -279,4 +283,42 @@ nav {
     text-decoration: none;
     font-weight: 600;
 
+}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
 }

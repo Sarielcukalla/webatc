@@ -19,7 +19,7 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
+    <!-- <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
             <a class="Logo" href="index.php"><img src="./image/logo.png"></a>
             
@@ -79,7 +79,11 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
 
 
                 </form>
-                <div class="center">
+               
+        </div>
+    </nav> -->
+
+     <div class="center">
                     <button id="show-login">Login</button>
                 </div>
                 <div class="popup">
@@ -106,21 +110,54 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-
+            </div> 
 
     <div class="home-container">
-        <div class="doctor">
+        <!-- <div class="doctor">
             <img src="./image/pharmacy.png">
         </div>
-        <div class="circle"></div>
+        <div class="circle"></div> -->
+        
+<p>Slideshow 1:</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="./image/paracetamol.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<p>Slideshow 2:</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="./image/paracetamol.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="tachipirina.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="img_band_ny.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
      
 
 
-<?php
+    </div>
+    <?php
 if(!isset($_COOKIE[$cookie_name])) {
   echo "Cookie named '" . $cookie_name . "' is not set!";
 } else {
@@ -132,7 +169,6 @@ if(!isset($_COOKIE[$cookie_name])) {
 echo hash('sha512','kokaelavamanit1')
 
 ?>
-    </div>
 
 
 <script src="./main.js"></script>
