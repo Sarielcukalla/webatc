@@ -1,9 +1,32 @@
-
-        <?php
+<?php
 $cookie_name = "emri";
 $cookie_value = "Paracetamol";
 setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
-?><!DOCTYPE html>
+?>
+    <?php 
+include ("Ldb.php");
+
+if (isset($_POST['rregj'])) {
+$Emri= $_POST['emri'];
+$mbiemri= $_POST['mbiemri'];
+$email = $_POST['email'];
+$password= $_POST['password'];
+
+$sql = "INSERT INTO perdorues (emri,mbiemeri, email ,password)
+VALUES ('$Emri', '$mbiemri', '$email', '$password')";
+
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+  // header("Location: http://localhost/phpmyadmin/index.php?route=/sql&db=urban&table=linjat&pos=0");
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+}
+$_SESSION['loggedin']=true;
+$conn->close(); 
+?>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -19,7 +42,7 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
+    <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
         <div class="container-fluid">
             <a class="Logo" href="index.php"><img src="./image/logo.png"></a>
             
@@ -79,84 +102,64 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
 
 
                 </form>
-               
-        </div>
-    </nav> -->
-
-     <div class="center">
-                    <button id="show-login">Login</button>
-                </div>
-                <div class="popup">
-                    <div class="close-btn">&times;</div>
-                    <div class="form">
-                        <h2>Log in</h2>
-                        <div class="form-element">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Enter email">
-                        </div>
-                        <div class="form-element">
-                            <label for="password">Password</label>
-                            <input type="password"id="password" placeholder="Enter password">
-                        </div>
-                        <div class="form-element">
-                            <input type="checkbox" id="remember-me">
-                            <label for="remember-me">Remember me</label>
-                        </div>
-                        <div class="form-element">
-                            <button>Sign in</button>
-                        </div>
-                        <div class="form-element">
-                          <a href="" id="Forgot password">forgot password</a>
-                        </div>
-                    </div>
-                </div>
+            
+            
+                
+    <div class="center">
+        <button id="show-login">Login</button>
+    </div>
+    <form method="POST" action="">
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Log in</h2>
+          
+            <div class="form-element">
+                <label for="name">Name</label>
+                <input type="text" name="emri" id="name" placeholder="name">
             </div> 
+              <div class="form-element">
+                <label for="mbiemer">Mbiemeri</label>
+                <input type="text" name="mbiemri" id="mbiemeri" placeholder="Mbiemeri">
+            </div>
+              <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter email">
+            </div>
+         
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password"name="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button type="submit" name="rregj">Sign up</button>
+            </div>
+            <div class="form-element">
+                <a href="" id="Forgot password">forgot password</a>
+            </div>
+        </div>
+    </div>
+</form>
+    </div>
+        </div>
+    </nav>
+
 
     <div class="home-container">
-        <!-- <div class="doctor">
+        <div class="doctor">
             <img src="./image/pharmacy.png">
         </div>
-        <div class="circle"></div> -->
-        
-<p>Slideshow 1:</p>
-<div class="slideshow-container">
-  <div class="mySlides1">
-    <img src="./image/paracetamol.jpg" style="width:100%">
-  </div>
+        <div class="circle"></div>
 
-  <div class="mySlides1">
-    <img src="img_snow_wide.jpg" style="width:100%">
-  </div>
 
-  <div class="mySlides1">
-    <img src="img_mountains_wide.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-</div>
-
-<p>Slideshow 2:</p>
-<div class="slideshow-container">
-  <div class="mySlides2">
-    <img src="./image/paracetamol.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides2">
-    <img src="tachipirina.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides2">
-    <img src="img_band_ny.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-</div>
-     
 
 
     </div>
+
     <?php
 if(!isset($_COOKIE[$cookie_name])) {
   echo "Cookie named '" . $cookie_name . "' is not set!";
@@ -165,16 +168,16 @@ if(!isset($_COOKIE[$cookie_name])) {
   echo  $_COOKIE[$cookie_name];
 }
 ?>
-<?php
+    <?php
 echo hash('sha512','kokaelavamanit1')
 
 ?>
 
 
-<script src="./main.js"></script>
+    <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
 
