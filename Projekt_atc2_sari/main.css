@@ -160,7 +160,6 @@ nav {
 .form-control {
     border-radius: 2.25rem;
     font-weight: 500;
-    
 }
 
 .btn {
@@ -180,14 +179,16 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.center{
+
+.center {
     position: absolute;
     top: 60px;
     right: 240px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 9999;
 }
-.center button{
+
+.center button {
     padding: 10px 20px;
     font-size: 15px;
     font-weight: 600;
@@ -197,33 +198,31 @@ nav {
     outline: none;
     cursor: pointer;
     border-radius: 5px;
-
 }
-.popup{
+
+.popup {
     position: absolute;
     top: -1000%;
     left: 50%;
     opacity: 0;
-    transform: translate(-50%,-50%) scale(1.25);
+    transform: translate(-50%, -50%) scale(1.25);
     width: 380px;
     padding: 10px 30px;
     background: #fff;
-    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    transition:top 0ms ease-in-out 200ms
-      opacity 200ms ease-in-out 0ms,
-     transform 20ms ease-in-out 0ms;
+    transition: top 0ms ease-in-out 200ms opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
 }
-.popup.active{
+
+.popup.active {
     top: 400px;
     opacity: 1;
-    transform: translate(-50%,-50%) scale(1);
-    transition:top 0ms ease-in-out 0ms
-    opacity 200ms ease-in-out 0ms,
-   transform 20ms ease-in-out 0ms;
-   z-index: 9999;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+    z-index: 9999;
 }
-.popup .close-btn{
+
+.popup .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -236,22 +235,25 @@ nav {
     border-radius: 15px;
     cursor: pointer;
 }
-.popup .form h2{
+
+.popup .form h2 {
     text-align: center;
     color: #222;
-    margin:10px 0px 20px;
+    margin: 10px 0px 20px;
     font-size: 25px;
 }
-.popup .form-element{
+
+.popup .form-element {
     margin: 15px 0px;
 }
-.popup .form .form-element label{
+
+.popup .form .form-element label {
     font-size: 14px;
     color: #222;
-    
 }
+
 .popup .form .form-element input[type="text"],
-.popup .form .form-element input[type="password"]{
+.popup .form .form-element input[type="password"] {
     margin-top: 5px;
     display: block;
     width: 100%;
@@ -259,12 +261,13 @@ nav {
     outline: none;
     border: 1px solid #aaa;
     border-radius: 5px;
-    
 }
-.popup .form .form-element input[type="checkbox"]{
+
+.popup .form .form-element input[type="checkbox"] {
     margin-right: 5px;
 }
-.popup .form .form-element button{
+
+.popup .form .form-element button {
     width: 100%;
     height: 40px;
     border: none;
@@ -275,13 +278,12 @@ nav {
     border-radius: 10px;
     cursor: pointer;
 }
-.popup .form .form-element a{
+
+.popup .form .form-element a {
     display: block;
     text-align: right;
     font-size: 15px;
     color: #1a79ca;
     text-decoration: none;
     font-weight: 600;
-
 }
-
