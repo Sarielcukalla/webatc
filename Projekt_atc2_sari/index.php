@@ -3,7 +3,7 @@ $cookie_name = "emri";
 $cookie_value = "Paracetamol";
 setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
 ?>
-    <?php 
+<?php 
 include ("Ldb.php");
 
 if (isset($_POST['rregj'])) {
@@ -42,136 +42,172 @@ $conn->close();
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
+    <nav class="navbar navbar-expand-lg  navbar-light p-3">
         <div class="container-fluid">
-            <a class="Logo" href="index.php"><img src="./image/logo.png"></a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <i class="bi bi-list"></i>
+            <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="#">Pharma<span>cy</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li id="Home" class="nav-item" data-bs-target=".show" aria-expanded="false">
-                        <a class="nav-link" href="index.php">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-house"></i>&nbsp;Home
-                        </a>
+
+            <div class=" collapse  navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
                     </li>
-
-
-                    <li class="nav-item" data-bs-target=".show" aria-expanded="false">
-                        <a class="nav-link" aria-expanded="false" href="#">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-bag"></i>&nbsp;Contact
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-cart"></i>&nbsp;Product
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
                         </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="row">
-                                <ul data-bs-target=".show" aria-expanded="false" class="">
-                                    <a href="#" class="dropdown-item" data-bs-target=".show" aria-expanded="false"
-                                        id="1">Medical</a>
-
-
-                                    <a href="#" class="dropdown-item" data-bs-target=".show" aria-expanded="false"
-                                        id="1">Cream</a>
-
-                                    <a href="#" class="dropdown-item" data-bs-target=".show" aria-expanded="false"
-                                        id="1">Spray</a>
-
-
-                                </ul>
-
-
-                            </div>
-
-
-
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Medical</a></li>
+                            <li><a class="dropdown-item" href="#">Cream</a></li>
+                            <li><a class="dropdown-item" href="#">Spray</a></li>
                         </ul>
-
                     </li>
                 </ul>
-               
-                <form method="GET" action="./Search.php" class="d-flex">
-                    <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
-                    <button class="btn btn-outline-success" data-bs-target=".show" aria-expanded="false"
-                        type="submit" name="btn"><i class="bi bi-search"></i></button>
-
-
-                </form>
-            
-            
-                
-    <div class="center">
-        <button id="show-login">Login</button>
-    </div>
-    <form method="POST" action="">
-    <div class="popup">
-        <div class="close-btn">&times;</div>
-        <div class="form">
-            <h2>Log in</h2>
-          
-            <div class="form-element">
-                <label for="name">Name</label>
-                <input type="text" name="emri" id="name" placeholder="name">
-            </div> 
-              <div class="form-element">
-                <label for="mbiemer">Mbiemeri</label>
-                <input type="text" name="mbiemri" id="mbiemeri" placeholder="Mbiemeri">
-            </div>
-              <div class="form-element">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Enter email">
-            </div>
-         
-            <div class="form-element">
-                <label for="password">Password</label>
-                <input type="password"name="password" id="password" placeholder="Enter password">
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Remember me</label>
-            </div>
-            <div class="form-element">
-                <button type="submit" name="rregj">Sign up</button>
-            </div>
-            <div class="form-element">
-                <a href="" id="Forgot password">forgot password</a>
+                <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-google"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</form>
-    </div>
+
+
+        <form id="show" method="GET" action="./Search.php" class="d-flex">
+            <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
+            <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit"
+                name="btn"><i class="bi bi-search"></i></button>
+
+
+        </form>
+
+
+
+        <!-- 
+        <div class="center">
+            <button id="show-login">Login</button>
         </div>
+        <form method="POST" action="" class="d-flex">
+            <div class="container popup">
+                <div class="close-btn">&times;</div>
+                <div class="form">
+                    <h2>Log in</h2>
+
+                    <div class="form-element">
+                        <label for="name">Name</label>
+                        <input type="text" name="emri" id="name" placeholder="name">
+                    </div>
+                    <div class="form-element">
+                        <label for="mbiemer">Mbiemeri</label>
+                        <input type="text" name="mbiemri" id="mbiemeri" placeholder="Mbiemeri">
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <div class="form-element">
+                        <button type="submit" name="rregj">Sign up</button>
+                    </div>
+                    <div class="form-element">
+                        <a href="" id="Forgot password">forgot password</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div> -->
     </nav>
 
-
-    <div class="home-container">
-        <div class="doctor">
-            <img src="./image/pharmacy.png">
+    <div class="container   header-container">
+        <div class="image-header">
+            <img class="img-fluid" src="./image/pharmacy-header.webp">
+            <div class="text-header">
+                <h1><span>Pharmative</span> Opens 24 Hours</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nihil eveniet <br> mollitia
+                    accusantium. Nam quasi sed ut nihil consectetur itaque. Illo autem eos omnis?</p>
+            </div>
+            <a href="#" class="btn btn-primary px-5 py-3">Shop Now</a>
         </div>
-        <div class="circle"></div>
+
+        <div class="site-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="feature">
+                            <span class="wrap-icon">
+                                <i class="bi bi-shop-window"></i>
+
+                            </span>
+                            <a href="#">
+                                <h3>Free Delivery</h3>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates
+                                excepturi neque labore. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature">
+                            <span class="wrap-icon">
+                            <i class="bi bi-shop-window"></i>
+                            </span>
+                            <a href="#">
+                                <h3>New Medicine Everyday</h3>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates
+                                excepturi neque labore. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature">
+                            <span class="wrap-icon">
+                                <i class="bi bi-heart"></i>
+
+                            </span>
+                            <a href="#">
+                                <h3>Medicines Guaranteed</h3>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates
+                                excepturi neque labore. </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
 
 
     </div>
 
-    <?php
-if(!isset($_COOKIE[$cookie_name])) {
-  echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-  
-  echo  $_COOKIE[$cookie_name];
-}
-?>
-    <?php
-echo hash('sha512','kokaelavamanit1')
 
-?>
+
 
 
     <script src="./main.js"></script>

@@ -7,84 +7,69 @@
     <title></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top  bg-white navbar-white">
+    <nav class="navbar navbar-expand-lg  navbar-light p-3">
         <div class="container-fluid">
-        <a class="Logo" href="index.php"><img src="./image/logo.png"></a>
-            
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <i class="bi bi-list"></i>
+            <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="#">Pharma<span>cy</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item" data-bs-target=".show" aria-expanded="false">
-                        <a class="nav-link" href="index.php">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-house"></i>&nbsp;Home
-                        </a>
+
+            <div class=" collapse  navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
                     </li>
-
-
-                    <li class="nav-item" data-bs-target=".show" aria-expanded="false">
-                        <a class="nav-link" aria-expanded="false" href="#">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-bag"></i>&nbsp;Contact
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-cart"></i>&nbsp;Product
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
                         </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="row">
-                                <ul data-bs-target=".show" aria-expanded="false" class="">
-                                    <a href="#" class="dropdown-item" data-bs-target=".show" aria-expanded="false"
-                                        id="1">Medical</a>
-
-
-                                    <a href="#" class="dropdown-item" data-bs-target=".show" aria-expanded="false"
-                                        id="1">Cream</a>
-
-                                    <a href="#" class="dropdown-item" data-bs-target=".show" aria-expanded="false"
-                                        id="1">Spray</a>
-
-
-                                </ul>
-
-
-                            </div>
-
-
-
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Medical</a></li>
+                            <li><a class="dropdown-item" href="#">Cream</a></li>
+                            <li><a class="dropdown-item" href="#">Spray</a></li>
                         </ul>
-
                     </li>
                 </ul>
-                <form method="GET" action="./Search.php" class="d-flex">
-                    <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
-                    <button class="btn btn-outline-success" data-bs-target=".show" aria-expanded="false"
-                        type="submit" name="btn"><i class="bi bi-search"></i></button>
-
-
-                </form>
+                <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-google"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </nav>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
 
 
-<?php
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+
+
+        <?php
 if (isset($_GET['btn'])) {
     include "Ldb.php";  
     $data =array();
@@ -98,31 +83,31 @@ if (isset($_GET['btn'])) {
     }
     
     $arr = json_decode(json_encode($data), TRUE);
-} ?> 
-<div class="container cards-flex">
-<?php foreach($arr as $key => $value): ?>
- <div class="product-card">
-		<div class="product-tumb">
-			<img src="./image/<?php echo $value['image'] ?>" >
-		</div>
-		<div class="product-details">
-			<span class="product-catagory"><?php echo $value['Product'] ?></span>
-			<h4><a href="">Shop NOW</a></h4>
-			<p><?php echo $value['Description'] ?></p>
-			<div class="product-bottom-details">
-				<div class="product-price"><small><?php echo $value['Price'] ?></small></div>
-				<div class="product-links">
-					<a href=""><i class="bi bi-heart"></i></a>
-					<a href=""><i class="bi bi-shopping-cart"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
+} ?>
+        <div class="container cards-flex">
+            <?php foreach($arr as $key => $value): ?>
+            <div class="product-card">
+                <div class="product-tumb">
+                    <img src="./image/<?php echo $value['image'] ?>">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory"><?php echo $value['Product'] ?></span>
+                    <h4><a href="">Shop NOW</a></h4>
+                    <p><?php echo $value['Description'] ?></p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
+                        <div class="product-links">
+                            <a href=""><i class="bi bi-heart"></i></a>
+                            <a href=""><i class="bi bi-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
-<?php endforeach;?>
-</div>
+            <?php endforeach;?>
+        </div>
 
 </body>
 
