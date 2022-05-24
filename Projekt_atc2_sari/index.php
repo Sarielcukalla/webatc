@@ -90,8 +90,8 @@ $conn->close();
 
         <form id="show" method="GET" action="./Search.php" class="d-flex">
             <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
-            <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit"
-                name="btn"><i class="bi bi-search"></i></button>
+            <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit" name="btn"><i
+                    class="bi bi-search"></i></button>
 
 
         </form>
@@ -172,7 +172,7 @@ $conn->close();
                     <div class="col-lg-4">
                         <div class="feature">
                             <span class="wrap-icon">
-                            <i class="bi bi-shop-window"></i>
+                                <i class="bi bi-shop-window"></i>
                             </span>
                             <a href="#">
                                 <h3>New Medicine Everyday</h3>
@@ -200,13 +200,85 @@ $conn->close();
             </div>
 
         </div>
+        <div class="site-section">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="title-section">
+                            <h2>Happy <strong style="color:#75b239;">Customers</strong></h2>
+                        </div>
+                        <div class="block-3 products-wrap">
 
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="title-section">
+                            <h2 class="mb-5">Why <strong style="color:#75b239;">Us</strong></h2>
+                            <div class="step-number d-flex mb-4">
+                                <span>1</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non unde ipsa quo
+                                    placeat eveniet iure beatae culpa, quisquam velit reiciendis cum commodi consequatur
+                                    dolorum excepturi magnam ex dolor obcaecati!</p>
+                            </div>
+                            <div class="step-number d-flex mb-4">
+                                <span>2</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non unde ipsa quo
+                                    placeat eveniet iure beatae culpa, quisquam velit reiciendis cum commodi consequatur
+                                    dolorum excepturi magnam ex dolor obcaecati!</p>
+                            </div>
+                            <div class="step-number d-flex mb-4">
+                                <span>3</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non unde ipsa quo
+                                    placeat eveniet iure beatae culpa, quisquam velit reiciendis cum commodi consequatur
+                                    dolorum excepturi magnam ex dolor obcaecati!</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
 
     </div>
+    <footer class="site-footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="block-7">
+                        <h3 class="footer-heading mb-4">About <strong style="color:#75b239">Us</strong></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium ipsam iste
+                            aliquam. Perspiciatis officiis labore non modi sunt dolorum, animi excepturi temporibus
+                            corporis eos ad expedita est itaque rem?</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
 
+                    <h3 class="footer-heading mb-4">Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="">Supplements</a></li>
+                        <li><a href="">Vitamins</a></li>
+                        <li><a href="">Diet & Nutrition</a></li>
+                    </ul>
 
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="block-5 mb-5">
+                        <h3 class="footer-heading mb-4">Contact Info</h3>
+                        <ul class="list-unstyled">
+                            <li>203 Fake St. Mountain View, San Francisco, California, USA</li>
+                            <li>+2 392 3929 210</li>
+                            <li>emailaddress@domain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 
 

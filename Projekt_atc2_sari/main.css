@@ -159,6 +159,11 @@ span {
     border-radius: 1.25rem;
 }
 
+.dropdown-item {
+    border-radius: 15px;
+    color: #000;
+}
+
 .center {
     position: absolute;
     top: 60px;
@@ -371,4 +376,59 @@ a {
     background: rgba(117, 178, 57, 0.1);
     color: #75b239;
     border-radius: 40%;
+}
+
+.title-section h2 {
+    display: inline-block;
+    color: #000;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.step-number>span {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    font-size: 26px;
+    background: #75b239;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.step-number p {
+    color: #000;
+}
+
+.site-footer .footer-heading {
+    font-size: 1.2rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.site-footer ul li {
+    margin-bottom: 10px;
+}
+
+.block-5 ul li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #25262a;
+}
+
+.site-footer ul li a {
+    color: #121314;
+}
+
+.mx-auto {
+    margin-top: 35px;
+}
+
+.mb-lg-0 {
+    margin-top: 35px;
 }
