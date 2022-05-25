@@ -37,7 +37,7 @@ span {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
-    top: 280px;
+    top: 200px;
     position: relative;
     flex-wrap: wrap;
     background: #fafafa;
@@ -87,7 +87,7 @@ span {
 }
 
 .product-details h4 a:hover {
-    color: #5ac279;
+    color: rgb(138 214 126);
 }
 
 .product-details p {
@@ -431,4 +431,18 @@ a {
 
 .mb-lg-0 {
     margin-top: 35px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #8c8080;
+}
+
+.rounded {
+    border-radius: 4.25rem!important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #75b239;
+    border-radius: 16px;
 }

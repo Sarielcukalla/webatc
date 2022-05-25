@@ -44,7 +44,7 @@ $conn->close();
 <body>
     <nav class="navbar navbar-expand-lg  navbar-light p-3">
         <div class="container-fluid">
-            <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="#">Pharma<span>cy</span></a>
+            <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="./index.php">Pharma<span>cy</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,13 +53,13 @@ $conn->close();
             <div class=" collapse  navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item">
-                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="#">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">About Us</a>
+                        <a class="nav-link mx-2" href="./aboutus.php">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -205,10 +205,42 @@ $conn->close();
                 <div class="row justify-content-between">
                     <div class="col-lg-6">
                         <div class="title-section">
-                            <h2>Happy <strong style="color:#75b239;">Customers</strong></h2>
+                            <h2>Our <strong style="color:#75b239;">Products</strong></h2>
                         </div>
                         <div class="block-3 products-wrap">
+                            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                </div>
+
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./image/My project (2).png" alt="Los Angeles"
+                                            class="rounded mx-auto d-block">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./image/pills.webp " class="rounded mx-auto d-block">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./image/My project (4).png" alt="New York"
+                                            class="rounded mx-auto d-block">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
@@ -249,7 +281,7 @@ $conn->close();
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="block-7">
-                        <h3 class="footer-heading mb-4">About <strong style="color:#75b239">Us</strong></h3>
+                        <h3 class="footer-heading mb-4">About <strong>Us</strong></h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium ipsam iste
                             aliquam. Perspiciatis officiis labore non modi sunt dolorum, animi excepturi temporibus
                             corporis eos ad expedita est itaque rem?</p>

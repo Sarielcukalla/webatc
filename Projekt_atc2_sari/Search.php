@@ -17,7 +17,7 @@
 
 <nav class="navbar navbar-expand-lg  navbar-light p-3">
         <div class="container-fluid">
-            <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="#">Pharma<span>cy</span></a>
+            <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="./index.php">Pharma<span>cy</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
             <div class=" collapse  navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item">
-                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="#">Shop</a>
@@ -161,7 +161,9 @@ if (isset($_GET['btn'])) {
 
 
             <?php endforeach;?>
+            
         </div>
+        
 
 </body>
 
