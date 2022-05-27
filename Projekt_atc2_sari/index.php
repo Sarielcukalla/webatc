@@ -56,7 +56,7 @@ $conn->close();
                         <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Shop</a>
+                        <a class="nav-link mx-2" href="./shop.php">Shop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="./aboutus.php">About Us</a>
@@ -84,10 +84,7 @@ $conn->close();
                         <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
                     </li>
                 </ul>
-            </div>
-        </div>
-
-
+                
         <form id="show" method="GET" action="./Search.php" class="d-flex">
             <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
             <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit" name="btn"><i
@@ -95,6 +92,11 @@ $conn->close();
 
 
         </form>
+            </div>
+        </div>
+
+
+       
 
 
 
