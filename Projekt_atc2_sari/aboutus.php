@@ -60,11 +60,62 @@
         </div>
 
 
+        <form id="show" method="GET" action="./Search.php" class="d-flex">
+            <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
+            <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit" name="btn"><i
+                    class="bi bi-search"></i></button>
 
+
+        </form>
+
+
+
+        <!-- 
+        <div class="center">
+            <button id="show-login">Login</button>
+        </div>
+        <form method="POST" action="" class="d-flex">
+            <div class="container popup">
+                <div class="close-btn">&times;</div>
+                <div class="form">
+                    <h2>Log in</h2>
+
+                    <div class="form-element">
+                        <label for="name">Name</label>
+                        <input type="text" name="emri" id="name" placeholder="name">
+                    </div>
+                    <div class="form-element">
+                        <label for="mbiemer">Mbiemeri</label>
+                        <input type="text" name="mbiemri" id="mbiemeri" placeholder="Mbiemeri">
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <div class="form-element">
+                        <button type="submit" name="rregj">Sign up</button>
+                    </div>
+                    <div class="form-element">
+                        <a href="" id="Forgot password">forgot password</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div> -->
     </nav>
-    <!-- <div class="container">
-        <h1 style="color:#25262a ;" class="text-center mb-4 fw-bold">About Us</h1>
-        <p style="color: #25262a;" class="fs-4 mb-4 fst-italic">
+    <div class="container">
+        <h1 style="color:#75b239 ;" class="text-center mb-4 fw-bold">About <strong style="color: black;">Us</strong>
+        </h1>
+        <p style="color: #25262a; border: solid #7dce79;" class="fs-4 mb-4 fst-italic py-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
@@ -85,7 +136,7 @@
             Aldus PageMaker including versions of Lorem Ipsum.
 
         </p>
-    </div> -->
+    </div>
     <footer class="site-footer bg-light">
         <div class="container">
             <div class="row">
@@ -122,6 +173,12 @@
 
     </footer>
 
+
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
