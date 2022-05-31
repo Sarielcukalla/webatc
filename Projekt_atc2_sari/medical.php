@@ -113,7 +113,21 @@
                 </div> -->
             </nav>
             
-        
+            <?php
+// if (isset($_GET['btn'])) {
+    include "Ldb.php";  
+    $data =array();
+    
+    $kerko = "Medical";
+    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Category = '$kerko'"); 
+        while ($row=mysqli_fetch_object($te_dhenat)){
+            $data[]=$row; 
+    
+           
+    }
+    
+    $arr = json_decode(json_encode($data), TRUE);
+// } ?>
         </body>
  
 </html>

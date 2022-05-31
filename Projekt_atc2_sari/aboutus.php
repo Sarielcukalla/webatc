@@ -28,7 +28,7 @@
                             href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Shop</a>
+                        <a class="nav-link mx-2" href="./shop.php">Shop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="./aboutus.php">About Us</a>
@@ -56,17 +56,19 @@
                         <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
                     </li>
                 </ul>
+
+                <form id="show" method="GET" action="./Search.php" class="d-flex">
+                    <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
+                    <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit"
+                        name="btn"><i class="bi bi-search"></i></button>
+
+
+                </form>
             </div>
         </div>
 
 
-        <form id="show" method="GET" action="./Search.php" class="d-flex">
-            <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
-            <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit" name="btn"><i
-                    class="bi bi-search"></i></button>
 
-
-        </form>
 
 
 
@@ -112,10 +114,11 @@
         </form>
         </div> -->
     </nav>
+
     <div class="container">
         <h1 style="color:#75b239 ;" class="text-center mb-4 fw-bold">About <strong style="color: black;">Us</strong>
         </h1>
-        <p style="color: #25262a; border: solid #7dce79;" class="fs-4 mb-4 fst-italic py-2">
+        <p style="color: #25262a; border: solid #7dce79; padding: 30px;" class="fs-4 mb-4 fst-italic py-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into

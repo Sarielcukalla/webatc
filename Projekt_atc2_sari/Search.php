@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
 <nav class="navbar navbar-expand-lg  navbar-light p-3">
         <div class="container-fluid">
             <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="./index.php">Pharma<span>cy</span></a>
@@ -29,10 +28,10 @@
                         <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Shop</a>
+                        <a class="nav-link mx-2" href="./shop.php">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">About Us</a>
+                        <a class="nav-link mx-2" href="./aboutus.php">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -57,10 +56,7 @@
                         <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
                     </li>
                 </ul>
-            </div>
-        </div>
-
-
+                
         <form id="show" method="GET" action="./Search.php" class="d-flex">
             <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
             <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit" name="btn"><i
@@ -68,6 +64,11 @@
 
 
         </form>
+            </div>
+        </div>
+
+
+       
 
 
 
@@ -117,13 +118,14 @@
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 
 
-        <?php
+    <?php
 if (isset($_GET['btn'])) {
     include "Ldb.php";  
     $data =array();
@@ -138,32 +140,31 @@ if (isset($_GET['btn'])) {
     
     $arr = json_decode(json_encode($data), TRUE);
 } ?>
-        <div class="container cards-flex">
-            <?php foreach($arr as $key => $value): ?>
-            <div class="product-card">
-                <div class="product-tumb">
-                    <img src="./image/<?php echo $value['image'] ?>">
-                </div>
-                <div class="product-details">
-                    <span class="product-catagory"><?php echo $value['Product'] ?></span>
-                    <h4><a href="">Shop NOW</a></h4>
-                    <p><?php echo $value['Description'] ?></p>
-                    <div class="product-bottom-details">
-                        <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
-                        <div class="product-links">
-                            <a href=""><i class="bi bi-heart"></i></a>
-                            <a href=""><i class="bi bi-shopping-cart"></i></a>
-                        </div>
+    <div class="container cards-flex">
+
+        <?php foreach($arr as $key => $value): ?>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="./image/<?php echo $value['image'] ?>">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"><?php echo $value['Product'] ?></span>
+                <h4><a href="./shop.php">Shop NOW</a></h4>
+                <p><?php echo $value['Description'] ?></p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
+                    <div class="product-links">
+                        <a href=""><i class="bi bi-heart"></i></a>
+                        <a href=""><i class="bi bi-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
-
-
-
-            <?php endforeach;?>
-            
         </div>
         
+        <?php endforeach;?>
+
+    </div>
+
 
 </body>
 

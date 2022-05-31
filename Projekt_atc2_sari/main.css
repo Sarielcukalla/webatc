@@ -31,8 +31,10 @@ span {
 }
 
 .product-card {
+    box-shadow: -1px 3px 12px 3px rgb(34 85 36 / 52%);
+    -webkit-box-shadow: -1px 3px 12px 3px rgb(76 209 161 / 20%);
+    -moz-box-shadow: -1px 3px 12px 3px rgba(34, 85, 36, 0.52);
     width: 380px;
-    box-shadow: 0 -1px 7px #dfdfdf;
     padding: 15px 7px;
     justify-content: flex-start;
     align-content: flex-start;
@@ -40,7 +42,7 @@ span {
     top: 200px;
     position: relative;
     flex-wrap: wrap;
-    background: #fafafa;
+    background: #5afe8f0d;
     display: flex;
     border-radius: 120px 18px;
     margin-bottom: 70px;
@@ -52,15 +54,20 @@ span {
     align-items: center;
     justify-content: center;
     height: 300px;
-    padding: 12px;
-    background: #cccccc91;
-    border-radius: 70px 12px;
+    padding: 10px;
+}
+
+.product-tumb:hover {
+    padding: 1px;
+    transition: 0.30s padding ease-out, 0.30s margin ease-out, 0.30s border ease-out;
+    cursor: pointer;
 }
 
 .product-tumb img {
     border-radius: 70px 12px;
     max-width: 100%;
     max-height: 100%;
+    -webkit-box-shadow: -3px 1px 10px 3px rgb(84 84 84 / 52%);
 }
 
 .product-details {
@@ -69,11 +76,11 @@ span {
 
 .product-catagory {
     display: block;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ccc;
-    margin-bottom: 18px;
+    color: rgb(255 193 7);
+    margin-bottom: 13px;
 }
 
 .product-details h4 a {
@@ -166,8 +173,8 @@ span {
 
 .center {
     position: absolute;
-    top: 60px;
-    right: 240px;
+    top: 43px;
+    right: 400px;
     transform: translate(-50%, -50%);
     z-index: 9999;
 }
@@ -176,12 +183,16 @@ span {
     padding: 10px 20px;
     font-size: 15px;
     font-weight: 600;
-    color: whitesmoke;
-    background: linear-gradient(to right, rgba(60, 141, 221, 0.985), rgb(85, 187, 165));
+    color: #75b239;
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 35px;
+}
+
+.center button:hover {
+    background-color: #75b239;
+    color: whitesmoke;
 }
 
 .popup {

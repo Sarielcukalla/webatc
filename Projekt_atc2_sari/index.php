@@ -67,7 +67,7 @@ $conn->close();
                             Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Medical</a></li>
+                            <li><a class="dropdown-item" href="./medical.php">Medical</a></li>
                             <li><a class="dropdown-item" href="#">Cream</a></li>
                             <li><a class="dropdown-item" href="#">Spray</a></li>
                         </ul>
@@ -100,8 +100,8 @@ $conn->close();
 
 
 
-        <!-- 
-        <div class="center">
+        
+        <!-- <div class="center">
             <button id="show-login">Login</button>
         </div>
         <form method="POST" action="" class="d-flex">
@@ -151,7 +151,7 @@ $conn->close();
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nihil eveniet <br> mollitia
                     accusantium. Nam quasi sed ut nihil consectetur itaque. Illo autem eos omnis?</p>
             </div>
-            <a href="#" class="btn btn-primary px-5 py-3">Shop Now</a>
+            <a href="./shop.php" class="btn btn-primary px-5 py-3">Shop Now</a>
         </div>
 
         <div class="site-section py-5">
@@ -226,7 +226,7 @@ $conn->close();
                                             class="rounded mx-auto d-block">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="./image/pills.webp " class="rounded mx-auto d-block">
+                                        <img src="./image/pills.jpg " class="rounded mx-auto d-block">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="./image/My project (4).png" alt="New York"
