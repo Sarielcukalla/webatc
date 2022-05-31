@@ -118,8 +118,7 @@
     include "Ldb.php";  
     $data =array();
     
-    $kerko = "Medical";
-    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Category = '$kerko'"); 
+    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Category = 'Medical'"); 
         while ($row=mysqli_fetch_object($te_dhenat)){
             $data[]=$row; 
     
@@ -129,5 +128,32 @@
     $arr = json_decode(json_encode($data), TRUE);
 // } ?>
         </body>
- 
+        <div class="container">
+<h1 class="mt-5" style="text-align: center; color: #75b239;"><?=$arr[0]['Category']?></h1>
+
+</div>
+     <div class="container cards-flex">
+
+        <?php foreach($arr as $key => $value): ?>
+        <div class="product-card">
+            <div class="product-tumb">
+                <img src="./image/<?php echo $value['image'] ?>">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory"><?php echo $value['Product'] ?></span>
+                <h4><a href="./shop.php">Shop NOW</a></h4>
+                <p><?php echo $value['Description'] ?></p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
+                    <div class="product-links">
+                        <a href=""><i class="bi bi-heart"></i></a>
+                        <a href=""><i class="bi bi-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <?php endforeach;?>
+
+    </div>
 </html>
