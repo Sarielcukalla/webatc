@@ -58,7 +58,7 @@
                     </li>
                 </ul>
 
-                <form id="show" method="GET" action="./Search.php" class="d-flex">
+                <form id="show" method="GET" action="./search.php" class="d-flex">
                     <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
                     <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit"
                         name="btn"><i class="bi bi-search"></i></button>
