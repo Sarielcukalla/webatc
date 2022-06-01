@@ -39,9 +39,9 @@
                             Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Medical</a></li>
-                            <li><a class="dropdown-item" href="#">Cream</a></li>
-                            <li><a class="dropdown-item" href="#">Spray</a></li>
+                            <li><a class="dropdown-item" href="./medical.php">Medical</a></li>
+                            <li><a class="dropdown-item" href="./cream.php">Cream</a></li>
+                            <li><a class="dropdown-item" href="./spray.php">Spray</a></li>
                         </ul>
                     </li>
                 </ul>

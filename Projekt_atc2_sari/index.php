@@ -68,8 +68,8 @@ $conn->close();
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="./medical.php">Medical</a></li>
-                            <li><a class="dropdown-item" href="#">Cream</a></li>
-                            <li><a class="dropdown-item" href="#">Spray</a></li>
+                            <li><a class="dropdown-item" href="./cream.php">Cream</a></li>
+                            <li><a class="dropdown-item" href="./spray.php">Spray</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -222,15 +222,15 @@ $conn->close();
 
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="./image/My project (2).png" alt="Los Angeles"
-                                            class="rounded mx-auto d-block">
+                                        <img src="./image/My project (2).png" alt=""
+                                            class="rounded mx-auto d-block img-fluid">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="./image/pills.jpg " class="rounded mx-auto d-block">
+                                        <img src="./image/pills.jpg " class="rounded mx-auto d-block img-fluid">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="./image/My project (4).png" alt="New York"
-                                            class="rounded mx-auto d-block">
+                                        <img src="./image/My project (4).png" alt=""
+                                            class="rounded mx-auto d-block img-fluid">
                                     </div>
                                 </div>
 

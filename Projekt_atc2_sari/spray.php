@@ -121,7 +121,7 @@
     include "Ldb.php";  
     $data =array();
     
-    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Category = 'Medical'"); 
+    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Category = 'Spray'"); 
         while ($row=mysqli_fetch_object($te_dhenat)){
             $data[]=$row; 
     
