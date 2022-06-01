@@ -88,7 +88,7 @@ span {
     display: block;
     margin-bottom: 18px;
     text-transform: uppercase;
-    color: #363636;
+    color: #6c757d;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -98,10 +98,12 @@ span {
 }
 
 .product-details p {
+    font-style: italic;
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 18px;
     color: #656363;
+    font-weight: 500;
 }
 
 .product-bottom-details {

@@ -166,7 +166,7 @@
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-3">
-                    <h3 class="text-white">discount up to 55% OFF Every Sunday</h3>
+                    <h3 class="text-white">Discount up to 55% OFF Every Sunday</h3>
                     <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minus
                         blanditiis esse suscipit a ab commodi, explicabo nobis, aliquam asperiores impedit ut voluptatum
                         quos ex ipsum, totam deserunt at aliquid.</p>
