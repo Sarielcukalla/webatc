@@ -4,17 +4,18 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Pharmacy_Online</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
+    <link rel="icon" type="image/x-icon" href="./image/syrup.png">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg  navbar-light p-3">
+    <nav class="navbar navbar-expand-lg  navbar-light p-3">
         <div class="container-fluid">
             <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="./index.php">Pharma<span>cy</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -25,7 +26,8 @@
             <div class=" collapse  navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item">
-                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page" href="./index.php">Home</a>
+                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page"
+                            href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="./shop.php">Shop</a>
@@ -56,19 +58,19 @@
                         <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
                     </li>
                 </ul>
-                
-        <form id="show" method="GET" action="./search.php" class="d-flex">
-            <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
-            <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit" name="btn"><i
-                    class="bi bi-search"></i></button>
+
+                <form id="show" method="GET" action="./search.php" class="d-flex">
+                    <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
+                    <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit"
+                        name="btn"><i class="bi bi-search"></i></button>
 
 
-        </form>
+                </form>
             </div>
         </div>
 
 
-       
+
 
 
 
@@ -135,11 +137,13 @@ if (isset($_GET['btn'])) {
         while ($row=mysqli_fetch_object($te_dhenat)){
             $data[]=$row; 
     
-           
     }
     
     $arr = json_decode(json_encode($data), TRUE);
-} ?>
+ 
+
+    } ?>
+
     <div class="container cards-flex">
 
         <?php foreach($arr as $key => $value): ?>
@@ -149,7 +153,7 @@ if (isset($_GET['btn'])) {
             </div>
             <div class="product-details">
                 <span class="product-catagory"><?php echo $value['Product'] ?></span>
-                <h4><a href="./shop.php">Shop NOW</a></h4>
+                <h4><a class="btn btn-outline-success" href="./shop.php">Shop NOW</a></h4>
                 <p><?php echo $value['Description'] ?></p>
                 <div class="product-bottom-details">
                     <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
@@ -160,10 +164,11 @@ if (isset($_GET['btn'])) {
                 </div>
             </div>
         </div>
-        
+
         <?php endforeach;?>
 
     </div>
+
 
 
 </body>

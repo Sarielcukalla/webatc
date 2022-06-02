@@ -3,13 +3,14 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>Pharmacy_Online</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" type="image/x-icon" href="./image/syrup.png">
 
 </head>
 
@@ -131,7 +132,7 @@
     $arr = json_decode(json_encode($data), TRUE);
  ?>
     <div class="container">
-        <h1 class="mt-5 fw-bold" style="text-align: center; color: #75b239; font-family:cursive">
+        <h1 class="mt-5 " style="font-weight: 549!important; text-align: center; color: #75b239; font-family:cursive">
             <?=$arr[0]['Category']?>
             <hr />
         </h1>
@@ -146,7 +147,7 @@
             </div>
             <div class="product-details">
                 <span class="product-catagory"><?php echo $value['Product'] ?></span>
-                <h4><a href="./shop.php">Shop NOW</a></h4>
+                <h4><a class="btn btn-outline-success" href="./shop.php">Shop NOW</a></h4>
                 <p><?php echo $value['Description'] ?></p>
                 <div class="product-bottom-details">
                     <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
