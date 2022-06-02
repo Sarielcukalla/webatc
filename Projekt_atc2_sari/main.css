@@ -82,12 +82,13 @@
             color: rgb(255 193 7);
             margin-bottom: 13px;
             text-align: center;
+            margin-top: -15px;
         }
         
         .product-details h4 a {
-            width: fit-content;
+            /* width: fit-content; */
             font-weight: 500;
-            text-align: start;
+            text-align: center;
             display: block;
             margin-bottom: 18px;
             text-transform: uppercase;
