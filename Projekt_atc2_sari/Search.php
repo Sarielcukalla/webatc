@@ -128,47 +128,57 @@
 
 
     <?php
-if (isset($_GET['btn'])) {
-    include "Ldb.php";  
-    $data =array();
-    
-    $kerko = $_GET['Search'];
-    $te_dhenat=mysqli_query($conn,"SELECT * FROM `product` where Product Like  '%$kerko%'"); 
-        while ($row=mysqli_fetch_object($te_dhenat)){
-            $data[]=$row; 
-    
-    }
-    
-    $arr = json_decode(json_encode($data), TRUE);
- 
+    if (isset($_GET['btn'])) {
+        include "Ldb.php";
+        $data = array();
 
+        $kerko = $_GET['Search'];
+        $te_dhenat = mysqli_query($conn, "SELECT * FROM `product` where Product Like  '%$kerko%'");
+        while ($row = mysqli_fetch_object($te_dhenat)) {
+            $data[] = $row;
+        }
+
+        $arr = json_decode(json_encode($data), TRUE);
     } ?>
 
     <div class="container cards-flex">
+        <?php if (count($arr) == 0) : ?>
+        <div class="container image-404">
+            <img class="rounded mx-auto d-block img-fluid" src="./image/404.png">
+            <h1>Product not Found</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat ipsam reprehenderit quis consectetur
+                molestiae eveniet earum et laboriosam id aliquam ullam enim nemo minima fuga velit repudiandae, ipsum
+                temporibus.</p>
+            
+        </div>
 
-        <?php foreach($arr as $key => $value): ?>
-        <div class="product-card">
-            <div class="product-tumb">
-                <img src="./image/<?php echo $value['image'] ?>">
-            </div>
-            <div class="product-details">
-                <span class="product-catagory"><?php echo $value['Product'] ?></span>
-                <hr/>
-                <p><?php echo $value['Description'] ?></p>
-                <hr/>
-                <div class="product-bottom-details">
+    </div>
+
+    <?php endif; ?>
+    <?php if (count($arr) >= 1) : ?>
+    <?php foreach ($arr as $key => $value) : ?>
+    <div class="product-card">
+        <div class="product-tumb">
+            <img src="./image/<?php echo $value['image'] ?>">
+        </div>
+        <div class="product-details">
+            <span class="product-catagory"><?php echo $value['Product'] ?></span>
+            <hr />
+            <p><?php echo $value['Description'] ?></p>
+            <hr />
+            <div class="product-bottom-details">
                 <h4><a class="btn btn-outline-success" href="./shop.php">Shop NOW</a></h4>
-                    <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
-                    <div class="product-links">
-                        <a href=""><i class="bi bi-heart"></i></a>
-                        <a href=""><i class="bi bi-shopping-cart"></i></a>
-                    </div>
+                <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
+                <div class="product-links">
+                    <a href=""><i class="bi bi-heart"></i></a>
+                    <a href=""><i class="bi bi-shopping-cart"></i></a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <?php endforeach;?>
-
+    <?php endforeach; ?>
+    <?php endif; ?>
     </div>
 
 

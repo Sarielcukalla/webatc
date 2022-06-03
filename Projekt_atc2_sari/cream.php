@@ -147,7 +147,9 @@
             <div class="product-details">
                 <span class="product-catagory"><?php echo $value['Product'] ?></span>
                 <h4><a class="btn btn-outline-success" href="./shop.php">Shop NOW</a></h4>
+                <hr/>
                 <p><?php echo $value['Description'] ?></p>
+                <hr/>
                 <div class="product-bottom-details">
                     <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
                     <div class="product-links">
