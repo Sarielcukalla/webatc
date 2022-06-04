@@ -117,6 +117,9 @@
     </nav>
 
     <div class="container">
+        <div class="image-header">
+            <img src="">
+        </div>
         <h1 style="color:#75b239 ;" class="text-center mb-4 fw-bold">About <strong style="color: black;">Us</strong>
         </h1>
         <p style="color: #25262a; border: solid #7dce79; padding: 30px;" class="fs-4 mb-4 fst-italic py-2">
