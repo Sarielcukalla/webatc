@@ -104,7 +104,7 @@ if (isset($_POST['rregj'])) {
             </div>
         </div>
 
-        <button type="button" class="btn btn-success d-table my-5 mx-auto" data-bs-toggle="modal"
+        <button type="button" class="btn btn-success d-table  mx-auto" data-bs-toggle="modal"
             data-bs-target="#ModalForm">
            Login
         </button>
