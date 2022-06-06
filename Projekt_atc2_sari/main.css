@@ -79,7 +79,7 @@
             font-size: 25px;
             font-weight: 700;
             text-transform: uppercase;
-            color: #75b239;
+            color: #cdb670c2;
             margin-bottom: 13px;
             text-align: center;
             margin-top: -15px;
@@ -94,14 +94,13 @@
             color: white;
             text-decoration: none;
             transition: 0.3s;
-            background-color: #ffc107!important;
+            background-color: #9cebd5 !important;
             border-color: #ffffff;
         }
         
-        .btn-outline-success {
-            color: #ffc107!important;
-            border-color: #ffffff!important;
-            color: white!important;
+        .product-details h4 a:hover {
+            background-color: #79b0a1!important;
+            color: white;
         }
         
         .product-details p {
@@ -126,7 +125,8 @@
         
         .product-price {
             font-size: 25px;
-            color: #287710;
+            font-family: cursive;
+            color: #424746;
             font-weight: 700;
         }
         
@@ -151,7 +151,7 @@
         }
         
         .product-links a:hover {
-            color: #287710;
+            color: #9cebd5;
         }
         
         .form-control {
@@ -184,120 +184,8 @@
             background-image: linear-gradient(to right, rgb(35 38 40 / 99%), rgb(85, 187, 165));
         }
         
-        .center {
-            position: absolute;
-            top: 43px;
-            right: 400px;
-            transform: translate(-50%, -50%);
-            z-index: 9999;
-        }
-        
-        .center button {
-            padding: 10px 20px;
-            font-size: 15px;
-            font-weight: 600;
-            color: #75b239;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            border-radius: 35px;
-        }
-        
-        .center button:hover {
-            background-color: #75b239;
-            color: whitesmoke;
-        }
-        
-        .popup {
-            position: absolute;
-            top: -1000%;
-            left: 50%;
-            opacity: 0;
-            transform: translate(-50%, -50%) scale(1.25);
-            width: 380px;
-            padding: 10px 30px;
-            background: #fff;
-            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
-            border-radius: 10px;
-            transition: top 0ms ease-in-out 200ms opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
-        }
-        
-        .popup.active {
-            top: 400px;
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(1);
-            transition: top 0ms ease-in-out 0ms opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
-            z-index: 9999;
-        }
-        
-        .popup .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 15px;
-            height: 15px;
-            background: rgb(218, 27, 27);
-            color: #eee;
-            text-align: center;
-            line-height: 15px;
-            border-radius: 15px;
-            cursor: pointer;
-        }
-        
-        .popup .form h2 {
-            text-align: center;
-            color: #222;
-            margin: 10px 0px 20px;
-            font-size: 25px;
-        }
-        
-        .popup .form-element {
-            margin: 15px 0px;
-        }
-        
-        .popup .form .form-element label {
-            font-size: 14px;
-            color: #222;
-        }
-        
-        .popup .form .form-element input[type="text"],
-        .popup .form .form-element input[type="password"] {
-            margin-top: 5px;
-            display: block;
-            width: 100%;
-            padding: 10px;
-            outline: none;
-            border: 1px solid #aaa;
-            border-radius: 5px;
-        }
-        
-        .popup .form .form-element input[type="checkbox"] {
-            margin-right: 5px;
-        }
-        
-        .popup .form .form-element button {
-            width: 100%;
-            height: 40px;
-            border: none;
-            outline: none;
-            font-size: 16px;
-            background: #222;
-            color: #f5f5f5;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-        
-        .popup .form .form-element a {
-            display: block;
-            text-align: right;
-            font-size: 15px;
-            color: #1a79ca;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
         .text-dark {
-            color: white!important;
+            color: white !important;
         }
         
         .image-header img {
@@ -438,7 +326,7 @@
             margin-bottom: 10px;
         }
         
-        .block-5 ul li {
+        .site-footer .block-5 ul li {
             padding-left: 30px;
             position: relative;
             margin-bottom: 15px;
@@ -449,12 +337,17 @@
             color: #121314;
         }
         
-        .mx-auto {
+        .site-footer .mx-auto {
             margin-top: 35px;
         }
         
-        .mb-lg-0 {
+        .site-footer .mb-lg-0 {
             margin-top: 35px;
+        }
+        
+        .my-5 {
+            margin-top: 0rem!important;
+            margin-bottom: 0rem!important;
         }
         
         .carousel-indicators [data-bs-target] {
@@ -462,7 +355,7 @@
         }
         
         .rounded {
-            border-radius: 4.25rem!important;
+            border-radius: 4.25rem !important;
         }
         
         .carousel-control-next-icon,
@@ -531,4 +424,183 @@
             text-align: center;
             font-weight: 600;
             color: rgb(81, 72, 72);
+        }
+        
+        .title h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-family: monospace;
+            color: #75b239;
+        }
+        
+        .image-about p {
+            font-size: large;
+            text-align: center;
+            color: #000;
+            font-family: italic;
+        }
+        
+        .hr1 {
+            background-color: #75b239;
+        }
+        
+        .image-about h2 {
+            color: rgb(19, 18, 18);
+            text-align: center;
+            margin-top: 6px;
+            font-family: monospace;
+        }
+        
+        .primary-color {
+            color: #FCA737;
+        }
+        
+        .testimonial-view {
+            max-width: 900px;
+            padding: 50px 15px;
+            margin: 0 auto 70px auto;
+            border-radius: 3px;
+        }
+        
+        .testimonial-view.top-margin .testimonial-block_user {
+            margin-top: -60px;
+        }
+        
+        @media (min-width: 900px) {
+            .testimonial-view.top-margin .testimonial-block_user {
+                margin-top: -100px;
+            }
+        }
+        
+        .testimonial-view img.left-quote {
+            opacity: 0.01;
+            width: 20%;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            position: absolute;
+            left: 40%;
+        }
+        
+        @media (min-width: 900px) {
+            .testimonial-view .carousel-control-prev {
+                left: -50px;
+            }
+            .testimonial-view .carousel-control-next {
+                right: -50px;
+            }
+            .testimonial-view .carousel-control-next-icon,
+            .testimonial-view .carousel-control-prev-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        
+        .section-header,
+        .testimonial-block_user_info_name {
+            color: #000;
+            font-family: monospace;
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .section-header:after,
+        .testimonial-block_user_info_name:after {
+            content: "";
+            height: 4px;
+            width: 100px;
+            background-color: #75b239;
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 50px);
+        }
+        
+        .testimonial-block {
+            padding: 15px;
+            margin: 50px 15px;
+            background: #fff;
+            color: #333;
+            -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
+        }
+        
+        @media (min-width: 900px) {
+            .testimonial-block {
+                padding: 50px;
+                margin: 50px;
+            }
+        }
+        
+        .testimonial-block .row {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            place-items: center;
+        }
+        
+        .testimonial-block .testimonial-block_user {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .testimonial-block .testimonial-block_user .testimonial-block_user_image {
+            position: relative;
+            margin: 0 15px 30px 15px;
+        }
+        
+        .testimonial-block .testimonial-block_user .testimonial-block_user_image img {
+            height: 170px;
+            width: 170px;
+            border: 7px solid #FFDFB8;
+            border-radius: 170px;
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-block .testimonial-block_user .testimonial-block_user_info .testimonial-block_user_info_name {
+            margin-bottom: 10px;
+        }
+        
+        .testimonial-block .testimonial-block_user .testimonial-block_user_info .testimonial-block_user_info_name:after {
+            width: 50px;
+            left: calc(50% - 25px);
+        }
+        
+        .testimonial-block .testimonial-block_content {
+            text-align: center;
+            font-size: 18px;
+            font-family: italic;
+        }
+        
+        .text-muted {
+            margin-bottom: -10px;
+        }
+        
+        .top-margin .testimonial-block .row {
+            place-items: normal;
+        }
+        
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        .site-section h2 {
+            padding: 10px;
+            color: #000;
+            font-size: 2rem;
+            font-family: monospace;
+            text-align: center;
+            margin-bottom: 10px;
         }

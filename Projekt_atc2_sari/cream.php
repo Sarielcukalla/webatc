@@ -131,7 +131,7 @@
     $arr = json_decode(json_encode($data), TRUE);
  ?>
     <div class="container">
-        <h1 class="mt-5 " style="font-weight: 549!important; text-align: center; color: #75b239; font-family:cursive">
+        <h1 class="mt-5 " style="font-weight: 549!important; text-align: center; color: #75b239; font-family:monospace">
             <?=$arr[0]['Category']?>
             <hr />
         </h1>
