@@ -106,29 +106,29 @@ if (isset($_POST['rregj'])) {
 
         <button type="button" class="btn btn-success d-table  mx-auto" data-bs-toggle="modal"
             data-bs-target="#ModalForm">
-           Login
+            <i class="bi bi-person-circle"></i>
         </button>
 
-        <!-- Modal Form -->
+
         <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <!-- Login Form -->
-                    <form action="">
+
+                    <form action="" method="POST">
                         <div class="modal-header">
-                            <h5 class="modal-title">login</h5>
+                            <h5 class="modal-title">Login</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="Username">Username<span class="text-danger">*</span></label>
-                                <input type="text" name="username" class="form-control" id="Username"
+                                <input required type="text" name="emri" class="form-control" id="Username"
                                     placeholder="Enter Username">
                             </div>
 
                             <div class="mb-3">
                                 <label for="Password">Password<span class="text-danger">*</span></label>
-                                <input type="password" name="password" class="form-control" id="Password"
+                                <input required type="password" name="password" class="form-control" id="Password"
                                     placeholder="Enter Password">
                             </div>
                             <div class="mb-3">
@@ -138,9 +138,9 @@ if (isset($_POST['rregj'])) {
                             </div>
                         </div>
                         <div class="modal-footer pt-4">
-                            <button type="button" class="btn btn-success mx-auto w-100">Login</button>
+                            <button  type="submit" class="btn btn-success mx-auto w-100">Login</button>
                         </div>
-                        <p class="text-center">Not yet account, <a href="#">Signup</a></p>
+                        <p class="text-center">Not yet account, <a href="./sign up">Sign up</a></p>
                     </form>
                 </div>
             </div>

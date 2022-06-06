@@ -29,16 +29,23 @@
         .nav-link {
             transition: color 0.5s ease-in-out, background-color 0.15s ease-in-out, border-color .15s ease-in-out;
         }
-         .btn-success{
+        
+        .btn-success {
             color: #75b239!important;
             background-color: #ffffff!important;
-            border-color:white!important ;
+            border-color: white!important;
         }
-        .btn-success:hover{
+        
+        .btn-success:hover {
             color: #ffffff!important;
             background-color: #75b239!important;
-            border-color:#75b239!important ;
+            border-color: #75b239!important;
         }
+        
+        .modal-title {
+            color: #86bc52;
+        }
+        
         .product-card {
             box-shadow: -1px 3px 12px 3px rgb(34 85 36 / 52%);
             -webkit-box-shadow: -1px 3px 12px 3px rgb(76 209 161 / 20%);
@@ -353,8 +360,6 @@
         .site-footer .mb-lg-0 {
             margin-top: 35px;
         }
-        
-
         
         .carousel-indicators [data-bs-target] {
             background-color: #8c8080;
