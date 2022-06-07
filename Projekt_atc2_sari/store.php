@@ -65,7 +65,7 @@ if (isset($_POST['rregj'])) {
                             href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="./store.php">Store</a>
+                        <a class="nav-link mx-2" href="./shop.php">Store</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="./aboutus.php">About Us</a>
@@ -138,7 +138,7 @@ if (isset($_POST['rregj'])) {
                             </div>
                         </div>
                         <div class="modal-footer pt-4">
-                            <button  type="submit" class="btn btn-success mx-auto w-100">Login</button>
+                            <button type="submit" class="btn btn-success mx-auto w-100">Login</button>
                         </div>
                         <p class="text-center">Not yet account, <a href="#">Sign up</a></p>
                     </form>
@@ -147,141 +147,28 @@ if (isset($_POST['rregj'])) {
         </div>
     </nav>
 
-    <div class="container   header-container">
-        <div class="image-header">
-            <img class="img-fluid" src="./image/pharmacy-header.webp">
-            <div class="text-header">
-                <h1><span>Pharmative</span> Opens 24 Hours</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nihil eveniet <br> mollitia
-                    accusantium. Nam quasi sed ut nihil consectetur itaque. Illo autem eos omnis?</p>
-            </div>
-            <a href="./shop.php" class="btn btn-primary px-5 py-3">Shop Now</a>
-        </div>
-
-        <div class="site-section py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="feature">
-                            <span class="wrap-icon">
-                                <i class="bi bi-shop-window"></i>
-
-                            </span>
-                            <a href="#">
-                                <h3>Free Delivery</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates
-                                excepturi neque labore. </p>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature">
-                            <span class="wrap-icon">
-                                <i class="bi bi-shop-window"></i>
-                            </span>
-                            <a href="#">
-                                <h3>New Medicine Everyday</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates
-                                excepturi neque labore. </p>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature">
-                            <span class="wrap-icon">
-                                <i class="bi bi-heart"></i>
-
-                            </span>
-                            <a href="#">
-                                <h3>Medicines Guaranteed</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates
-                                excepturi neque labore. </p>
-
-                        </div>
-                    </div>
+    <div class="bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-0">
+                    <a href="index.php">Home</a>
+                    <span class="mx-2 mb-0">/</span>
+                    <strong class="text-black">Store</strong>
                 </div>
             </div>
-
         </div>
-        <div class="site-section">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-lg-6">
-                        <div class="title-section">
-                            <h2>Our <strong style="color:#75b239;">Products</strong></h2>
-                        </div>
-                        <div class="block-3 products-wrap">
-                            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
-                                        class="active"></button>
-                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                                </div>
-
-
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./image/My project (2).png" alt=""
-                                            class="rounded mx-auto d-block img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./image/pills.jpg " class="rounded mx-auto d-block img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./image/My project (4).png" alt=""
-                                            class="rounded mx-auto d-block img-fluid">
-                                    </div>
-                                </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#demo"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#demo"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="title-section">
-                            <h2 class="mb-5">Why <strong style="color:#75b239;">Us</strong></h2>
-                            <div class="step-number d-flex mb-4">
-                                <span>1</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non unde ipsa quo
-                                    placeat eveniet iure beatae culpa, quisquam velit reiciendis cum commodi consequatur
-                                    dolorum excepturi magnam ex dolor obcaecati!</p>
-                            </div>
-                            <div class="step-number d-flex mb-4">
-                                <span>2</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non unde ipsa quo
-                                    placeat eveniet iure beatae culpa, quisquam velit reiciendis cum commodi consequatur
-                                    dolorum excepturi magnam ex dolor obcaecati!</p>
-                            </div>
-                            <div class="step-number d-flex mb-4">
-                                <span>3</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non unde ipsa quo
-                                    placeat eveniet iure beatae culpa, quisquam velit reiciendis cum commodi consequatur
-                                    dolorum excepturi magnam ex dolor obcaecati!</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-
     </div>
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-3"
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <footer class="site-footer bg-light">
         <div class="container">
             <div class="row">

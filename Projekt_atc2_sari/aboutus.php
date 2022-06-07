@@ -69,51 +69,6 @@
         </div>
 
 
-
-
-
-
-        <!-- 
-        <div class="center">
-            <button id="show-login">Login</button>
-        </div>
-        <form method="POST" action="" class="d-flex">
-            <div class="container popup">
-                <div class="close-btn">&times;</div>
-                <div class="form">
-                    <h2>Log in</h2>
-
-                    <div class="form-element">
-                        <label for="name">Name</label>
-                        <input type="text" name="emri" id="name" placeholder="name">
-                    </div>
-                    <div class="form-element">
-                        <label for="mbiemer">Mbiemeri</label>
-                        <input type="text" name="mbiemri" id="mbiemeri" placeholder="Mbiemeri">
-                    </div>
-                    <div class="form-element">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Enter email">
-                    </div>
-
-                    <div class="form-element">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Enter password">
-                    </div>
-                    <div class="form-element">
-                        <input type="checkbox" id="remember-me">
-                        <label for="remember-me">Remember me</label>
-                    </div>
-                    <div class="form-element">
-                        <button type="submit" name="rregj">Sign up</button>
-                    </div>
-                    <div class="form-element">
-                        <a href="" id="Forgot password">forgot password</a>
-                    </div>
-                </div>
-            </div>
-        </form>
-        </div> -->
     </nav>
 
     <div class="container">
