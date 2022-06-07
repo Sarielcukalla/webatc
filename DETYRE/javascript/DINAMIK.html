@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+     
+
+        .red {
+            color: red;
+        }
+
+    
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="pergj">
+    </p>
+
+    <input type="number" id="getnumber">
+    <input type="button" onclick="dinamik()" value="shto" id="btn"></input>
+
+    <script>
+        var ngjyrat = ["red", "blue"];
+
+        function dinamik() {
+            var input = document.getElementById("getnumber").value;
+            for (let i = 0; i < input; i++) {
+             
+
+                var pergj = document.getElementById("pergj").innerHTML += "<span class="+ngjyrat[i % 2]+">Text " + (i + 1) + " <br>";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>
