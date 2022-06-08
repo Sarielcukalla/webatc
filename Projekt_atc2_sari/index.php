@@ -7,31 +7,31 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
 include("Ldb.php");
 
 if (isset($_POST['rregj'])) {
+
     $Emri = $_POST['emri'];
     $mbiemri = $_POST['mbiemri'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $selectEmail = "SELECT 'email' FROM perdorues WHERE 'email' == $email";
-    if ($selectEmail != null) {
-//   echo  '<div class="alert alert-danger" role="alert">
-//   A simple danger alert—check it out!
-// </div>';
-    } else {
+//     $selectEmail = "SELECT 'email' FROM perdorues WHERE 'email' == $email";
+//     if ($selectEmail != null) {
+// //   echo  '<div class="alert alert-danger" role="alert">
+// //   A simple danger alert—check it out!
+// // </div>';
+//     } else {    
         $sql = "INSERT INTO perdorues (emri, mbiemeri, email, password)
     VALUES ('$Emri', '$mbiemri', '$email', '$password')";
 
-
         if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
+            echo "<script>alert('U rregjistrua')</script>";
             // header("Location: http://localhost/phpmyadmin/index.php?route=/sql&db=urban&table=linjat&pos=0");
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            // echo  "Error: " . $sql . "<br>" . $conn->error;
         }
     }
     $_SESSION['loggedin'] = true;
     $conn->close();
-}
+// }
 ?>
 <!DOCTYPE html>
 <html>
@@ -131,7 +131,7 @@ if (isset($_POST['rregj'])) {
                                 <input required type="Nickname" name="mbiemri" class="form-control" id="Nickname"
                                     placeholder="Enter Nickname">
                             </div>
-                            
+
                             <div class="mb-3">
                                 <label for="Email">Email<span class="text-danger">*</span></label>
                                 <input required type="Email" name="email" class="form-control" id="Email"
@@ -149,7 +149,7 @@ if (isset($_POST['rregj'])) {
                             </div>
                         </div>
                         <div class="modal-footer pt-4">
-                            <button  type="submit" class="btn btn-success mx-auto w-100">Login</button>
+                            <button name="rregj" type="submit" class="btn btn-success mx-auto w-100">Login</button>
                         </div>
                         <p class="text-center">Not yet account, <a href="#">Sign up</a></p>
                     </form>
