@@ -615,3 +615,7 @@
             text-align: center;
             margin-bottom: 10px;
         }
+        
+        .text-black {
+            color: #000;
+        }

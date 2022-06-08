@@ -30,7 +30,7 @@
                             href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="./shop.php">Shop</a>
+                        <a class="nav-link mx-2" href="./store.php">Store</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="./aboutus.php">About Us</a>

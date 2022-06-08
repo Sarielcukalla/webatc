@@ -147,7 +147,7 @@ if (isset($_POST['rregj'])) {
         </div>
     </nav>
 
-    <div class="bg-dark py-3">
+    <div class="bg-white py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-0">
@@ -160,12 +160,7 @@ if (isset($_POST['rregj'])) {
     </div>
     <div class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="mb-3"
-                </div>
-            </div>
-        </div>
+    
     </div>
 
 
