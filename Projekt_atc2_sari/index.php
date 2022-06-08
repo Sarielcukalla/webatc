@@ -127,6 +127,17 @@ if (isset($_POST['rregj'])) {
                             </div>
 
                             <div class="mb-3">
+                                <label for="Nickname">Nickname<span class="text-danger">*</span></label>
+                                <input required type="Nickname" name="mbiemri" class="form-control" id="Nickname"
+                                    placeholder="Enter Nickname">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="Email">Email<span class="text-danger">*</span></label>
+                                <input required type="Email" name="email" class="form-control" id="Email"
+                                    placeholder="Enter Email">
+                            </div>
+                            <div class="mb-3">
                                 <label for="Password">Password<span class="text-danger">*</span></label>
                                 <input required type="password" name="password" class="form-control" id="Password"
                                     placeholder="Enter Password">
