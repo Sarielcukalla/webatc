@@ -164,7 +164,6 @@ if (isset($_POST['rregj'])) {
     include "Ldb.php";
     $data = array();
 
-    // $kerko = $_GET['Search'];
     $cardsProduct = mysqli_query($conn, "SELECT * FROM `cards_product`");
     while ($row = mysqli_fetch_object($cardsProduct)) {
         $data[] = $row;

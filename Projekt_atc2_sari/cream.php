@@ -101,15 +101,22 @@
             </div>
             <div class="product-details">
                 <span class="product-catagory"><?php echo $value['Product'] ?></span>
-                <h4><a class="btn btn-outline-success" href="./shop.php">Shop NOW</a></h4>
-                <hr/>
+                <hr />
                 <p><?php echo $value['Description'] ?></p>
-                <hr/>
+                <hr />
                 <div class="product-bottom-details">
+                    <h4><a class="btn" href="./shop.php">Shop Now</a></h4>
                     <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
                     <div class="product-links">
-                        <a href=""><i class="bi bi-heart"></i></a>
-                        <a href=""><i class="bi bi-shopping-cart"></i></a>
+                        <form class="form-submit" method="post">
+                            <input type="hidden" name="pid" value="<?php echo $value['Barcode']; ?>">
+                            <input type="hidden" name="pproduct" value="<?php echo $value['Product']; ?>">
+                            <input type="hidden" name="pimage" value="<?php echo $value['image']; ?>">
+                            <input type="hidden" name="pdescription" value="<?php echo $value['Description']; ?>">
+                            <input type="hidden" name="pprice" value="<?php echo $value['Price']; ?>">
+                            <button class="btn" name="submit" type="submit"><i class="bi bi-cart-plus"></i></button>
+                        </form>
+
                     </div>
                 </div>
             </div>

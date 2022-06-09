@@ -130,8 +130,8 @@ if (isset($_GET['btn'])) {
                             <input type="hidden" name="pimage" value="<?php echo $value['image']; ?>">
                             <input type="hidden" name="pdescription" value="<?php echo $value['Description']; ?>">
                             <input type="hidden" name="pprice" value="<?php echo $value['Price']; ?>">
-                            <input name="submit" type="submit" value="Shto"><i
-                                    class="bi bi-cart-plus"></i></input>
+                         <button class="btn" name="submit" type="submit"><i
+                                    class="bi bi-cart-plus"></i></button>
                         </form>
 
                     </div>

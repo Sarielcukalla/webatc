@@ -632,3 +632,13 @@
         .store_a a {
             color: #75b239;
         }
+        
+        .form-submit .btn {
+            background-color: #9cebd5!important;
+            color: #fff;
+            border-color: #9cebd5 !important;
+        }
+        
+        .form-submit .btn:hover {
+            color: #79b0a1;
+        }
