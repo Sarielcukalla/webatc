@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset='utf-8'>
@@ -124,14 +124,14 @@ if (isset($_GET['btn'])) {
                     <h4><a class="btn" href="./shop.php">Shop Now</a></h4>
                     <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
                     <div class="product-links">
-                        <form class="form-submit">
-                            <input type="hidden" class="pid" value="<?php echo $value['Barcode']; ?>">
-                            <input type="hidden" class="pproduct" value="<?php echo $value['Product']; ?>">
-                            <input type="hidden" class="pimage" value="<?php echo $value['image']; ?>">
-                            <input type="hidden" class="pdescription" value="<?php echo $value['Description']; ?>">
-                            <input type="hidden" class="pprice" value="<?php echo $value['Price']; ?>">
-                            <button id="addItem" name="addItem" class="btn btn-success btn-md"><i
-                                        class="bi bi-cart-plus"></i></button>
+                        <form class="form-submit" method="post">
+                            <input type="hidden" name="pid" value="<?php echo $value['Barcode']; ?>">
+                            <input type="hidden" name="pproduct" value="<?php echo $value['Product']; ?>">
+                            <input type="hidden" name="pimage" value="<?php echo $value['image']; ?>">
+                            <input type="hidden" name="pdescription" value="<?php echo $value['Description']; ?>">
+                            <input type="hidden" name="pprice" value="<?php echo $value['Price']; ?>">
+                            <input name="submit" type="submit" value="Shto"><i
+                                    class="bi bi-cart-plus"></i></input>
                         </form>
 
                     </div>
@@ -143,34 +143,23 @@ if (isset($_GET['btn'])) {
 <?php endif; ?>
 </div>
 <?php
+if (isset($_POST['submit'])) {
+    include("Ldb.php");
+    $barcode = $_POST['pid'];
+    $product = $_POST['pproduct'];
+    $image = $_POST['pimage'];
+    $description = $_POST['pdescription'];
+    $price = $_POST['pprice'];
 
-if (isset($_POST["pid"]) && isset($_POST["pproduct"]) && isset($_POST["pdescription"]) && isset($_POST["pimage"]) && isset($_POST["pprice"])) {
-
-$id = $_POST["pid"];
-$product = $_POST["pproduct"];
-$image = $_POST["pimage"];
-$description = $_POST["pdescription"];
-$price = $_POST["pprice"];
-$qty = 1;
-$select_stmt = $db->prepare("SELECT Barcode FROM cards_product WHERE Barcode=:id");
-$select_stmt->execute(array(":code" => $code));
-$row = $select_stmt->fetch(PDO::FETCH_ASSOC);
-$check_code = $row["Barcode"];
-
-if (!$check_code) {
-    $insert_stmt = $db->prepare("INSERT INTO cards_product('Barcode','Product','Price','image','Description') VALUES(:id,:product,:price,:description,:image,
-        :qty)");
-    $insert_stmt->bindParam(":product", $product);
-    $insert_stmt->bindParam(":price", $price);
-    $insert_stmt->bindParam(":image", $image);
-    $insert_stmt->bindParam(":description", $description);
-    $insert_stmt->bindParam(":id", $id);
-    $insert_stmt->bindParam(":qty", $qty);
-    $insert_stmt->execute();
-    echo "punon";
-} else {
-    echo "jo";
-}
+    $insertQuery = "INSERT INTO cards_product (Barcode, Product, Price, Description, image) 
+VALUES ('$barcode', '$product', '$price', '$description', '$image'
+)";
+    if ($conn->query($insertQuery)) {
+        echo "added";
+    } else {
+        echo "Error: " . $insertQuery . "<br>" . $conn->error;
+    }
+    $conn->close();
 }
 ?>
 </body>

@@ -43,126 +43,158 @@ if (isset($_POST['rregj'])) {
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="icon" type="image/x-icon" href="./image/syrup.png">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg  navbar-light p-3">
-        <div class="container-fluid">
-            <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="./index.php">Pharma<span>cy</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+<nav class="navbar navbar-expand-lg  navbar-light p-3">
+    <div class="container-fluid">
+        <a style="color: rgb(138 214 126);" class="navbar-brand fs-3" href="./index.php">Pharma<span>cy</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class=" collapse  navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item">
-                        <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page"
-                            href="./index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="./shop.php">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="./aboutus.php">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./medical.php">Medical</a></li>
-                            <li><a class="dropdown-item" href="./cream.php">Cream</a></li>
-                            <li><a class="dropdown-item" href="./spray.php">Spray</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-google"></i></a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-twitter"></i></a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
-                    </li>
-                </ul>
+        <div class=" collapse  navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item">
+                    <a style="color: #86d47f;" class="nav-link mx-2 active" aria-current="page"
+                       href="./index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="./shop.php">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="./aboutus.php">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./medical.php">Medical</a></li>
+                        <li><a class="dropdown-item" href="./cream.php">Cream</a></li>
+                        <li><a class="dropdown-item" href="./spray.php">Spray</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-google"></i></a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
+                </li>
+            </ul>
 
-                <form id="show" method="GET" action="./search.php" class="d-flex">
-                    <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
-                    <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit"
+            <form id="show" method="GET" action="./search.php" class="d-flex">
+                <input name="Search" class="form-control mr-sm-2" type="search" placeholder="Search...">
+                <button class="btn btn-warning" data-bs-target=".show" aria-expanded="false" type="submit"
                         name="btn"><i class="bi bi-search"></i></button>
 
 
+            </form>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-success d-table  mx-auto" data-bs-toggle="modal"
+            data-bs-target="#ModalForm">
+        <i class="bi bi-person-circle"></i>
+    </button>
+
+
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <form action="" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="Username">Username<span class="text-danger">*</span></label>
+                            <input required type="text" name="emri" class="form-control" id="Username"
+                                   placeholder="Enter Username">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Password">Password<span class="text-danger">*</span></label>
+                            <input required type="password" name="password" class="form-control" id="Password"
+                                   placeholder="Enter Password">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                            <label class="form-check-label" for="remember">Remember Me</label>
+                            <a href="#" class="float-end">Forgot Password</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer pt-4">
+                        <button type="submit" class="btn btn-success mx-auto w-100">Login</button>
+                    </div>
+                    <p class="text-center">Not yet account, <a href="#">Sign up</a></p>
                 </form>
             </div>
         </div>
+    </div>
+</nav>
 
-        <button type="button" class="btn btn-success d-table  mx-auto" data-bs-toggle="modal"
-            data-bs-target="#ModalForm">
-            <i class="bi bi-person-circle"></i>
-        </button>
-
-
-        <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-
-                    <form action="" method="POST">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Login</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="mb-3">
-                                <label for="Username">Username<span class="text-danger">*</span></label>
-                                <input required type="text" name="emri" class="form-control" id="Username"
-                                    placeholder="Enter Username">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="Password">Password<span class="text-danger">*</span></label>
-                                <input required type="password" name="password" class="form-control" id="Password"
-                                    placeholder="Enter Password">
-                            </div>
-                            <div class="mb-3">
-                                <input class="form-check-input" type="checkbox" value="" id="remember" required>
-                                <label class="form-check-label" for="remember">Remember Me</label>
-                                <a href="#" class="float-end">Forgot Password</a>
-                            </div>
-                        </div>
-                        <div class="modal-footer pt-4">
-                            <button type="submit" class="btn btn-success mx-auto w-100">Login</button>
-                        </div>
-                        <p class="text-center">Not yet account, <a href="#">Sign up</a></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="bg-white py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-0">
-                  <span class="store_a"><a href="index.php">Home</a></span>
-                    <span class="mx-2 mb-0">/</span>
-                    <strong class="text-black">Store</strong>
-                </div>
+<div class="bg-white py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <span class="store_a"><a href="index.php">Home</a></span>
+                <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">Store</strong>
             </div>
         </div>
     </div>
-    <div class="py-5">
-        <div class="container">
-    
-    </div>
+</div>
+<div class="py-5">
+    <div class="container">
+        <?php
+    include "Ldb.php";
+    $data = array();
 
+    // $kerko = $_GET['Search'];
+    $cardsProduct = mysqli_query($conn, "SELECT * FROM `cards_product`");
+    while ($row = mysqli_fetch_object($cardsProduct)) {
+        $data[] = $row;
+    }
+
+    $arr = json_decode(json_encode($data), TRUE);
+        ?>
+    </div>
+    <?php if (is_countable($arr) && count($arr) >= 1) : ?>
+        <?php foreach ($arr as $key => $value) : ?>
+            <div class="product-card">
+                <div class="product-tumb">
+                    <img src="./image/<?php echo $value['image'] ?>">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory"><?php echo $value['Product'] ?></span>
+                    <hr/>
+                    <p><?php echo $value['Description'] ?></p>
+                    <hr/>
+                    <div class="product-bottom-details">
+                        <h4><a class="btn" href="./shop.php">Shop Now</a></h4>
+                        <div class="product-price"><small><?php echo $value['Price'] ?></small></div>
+                        <div class="product-links">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <?php endforeach; ?>
+    <?php endif; ?>
 
     <footer class="site-footer bg-light">
         <div class="container">
@@ -201,10 +233,9 @@ if (isset($_POST['rregj'])) {
     </footer>
 
 
-
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
 </body>
