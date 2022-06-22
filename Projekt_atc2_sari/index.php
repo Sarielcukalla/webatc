@@ -23,10 +23,10 @@ if (isset($_POST['rregj'])) {
     VALUES ('$Emri', '$mbiemri', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "<script>alert('U rregjistrua')</script>";
+        
         // header("Location: http://localhost/phpmyadmin/index.php?route=/sql&db=urban&table=linjat&pos=0");
     } else {
-        // echo  "Error: " . $sql . "<br>" . $conn->error;
+        echo  "Error: " . $sql . "<br>" . $conn->error;
     }
 }
 $_SESSION['loggedin'] = true;
@@ -112,7 +112,7 @@ $conn->close();
     </button>
 
 
-    <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
